@@ -33,23 +33,30 @@ export default function Home() {
   );
 }
 
-export const Navbar = () => (
-  <section className=" fixed flex justify-center w-full z-50  items-center bg-white ">
-    <div className="w-[90%] xl:w-full max-w-7xl mx-auto flex items-center justify-between h-[112px]">
-      <Link to="/">
-        <img className="h-24 md:h-32" src="/logo-black.png" />
-      </Link>
-      <div className="flex items-center gap-8">
-        <Link to="/cursos">
-          <p>Cursos grupales</p>
+export const Navbar = () => {
+  const handleClick = () => {
+    console.log("pollo");
+    const node = document.querySelector("#contacto");
+    node.scrollIntoView({ behavior: "smooth" });
+  };
+  return (
+    <section className=" fixed flex justify-center w-full z-50  items-center bg-white ">
+      <div className="w-[90%] xl:w-full max-w-7xl mx-auto flex items-center justify-between h-[112px]">
+        <Link to="/">
+          <img className="h-24 md:h-32" src="/logo-black.png" />
         </Link>
-        <a href="#contacto">
-          <PrimaryButton title="Contáctanos" />
-        </a>
+        <div className="flex items-center gap-8">
+          <Link to="/cursos">
+            <p>Cursos grupales</p>
+          </Link>
+          <div onClick={handleClick}>
+            <PrimaryButton title="Contáctanos" />
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export const Testimonial = () => {
   return (
