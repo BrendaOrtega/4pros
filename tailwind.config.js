@@ -15,10 +15,6 @@ export default {
         plant: "#8BB236",
         iron: "#4B5563",
       },
-      backgroundImage: {
-        footer: "url(./footerimg.png)",
-        banner1: "url(./banner1.png)",
-      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
