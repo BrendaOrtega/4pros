@@ -109,7 +109,7 @@ export const SimpleAnimatedGallery = ({
         </section>
       </article>
 
-      <section className="flex justify-center items-center gap-8 mt-8 relative z-10">
+      <section className="flex justify-center items-center gap-8 mt-0 md:mt-8 relative z-10">
         <NavigationButton onClick={handlePrev}>
           <img src="/right-arrow.svg" />
         </NavigationButton>

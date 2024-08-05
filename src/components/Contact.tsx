@@ -3,7 +3,7 @@ import React from "react";
 export const Contact = () => {
   return (
     <main id="contacto">
-      <section className="max-w-7xl w-[90%] md:w-full mx-auto mt-20 lg:mt-[160px] flex flex-wrap lg:flex-nowrap  h-auto">
+      <section className="max-w-7xl w-[90%] xl:w-full mx-auto mt-20 lg:mt-[160px] flex flex-wrap lg:flex-nowrap  h-auto">
         <div className="lg:w-[60%] w-full h-auto">
           <h2 className="text-3xl lg:text-5xl	 font-bold text-lef leading-tight ">
             ¿Quieres saber más sobre nuestros cursos? Escríbenos.

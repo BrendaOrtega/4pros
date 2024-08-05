@@ -5,3 +5,15 @@
 .read-the-docs {
   color: #888;
 }
+.backHero {
+  background-image: url("/cover.png");
+}
+.figure {
+  background-image: url("/Polygon.png");
+}
+
+@media (max-width: 768px) {
+  .figure {
+    background-image: url("/Polygon2.png");
+  }
+}

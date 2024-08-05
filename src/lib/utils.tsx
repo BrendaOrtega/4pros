@@ -57,7 +57,7 @@ export const reviwes = [
     text: "Me encanta, la profesora es muy paciente, ayuda mucho y hace que la pronunciación sea más fácil",
     title: "Business owner",
     alt: "Oscar de Jesús Montiel",
-    link: "https://www.linkedin.com/in/brendago/",
+    link: "https://www.linkedin.com/",
   },
   {
     src: "/testimonials/img6.png",
@@ -70,17 +70,17 @@ export const reviwes = [
   {
     src: "/testimonials/img7.jpg",
     name: "Gloria Moya Paniagua",
-    text: "Tomo clases con English4professionals desde hace 4 años. Los profesores tiene herramientas muy elocuentes para enseñarte y también para aplicar las enseñanzas. Gracias a ellos me he podido mejorar mucho a la hora de desarrollar mi trabajo. Antes no me podia comunciar con soltura y ahora lo puedo hacer. Además de que se adaptan a tus necesidades, el vocabulario y las estructuras gramaticales es muy específico y enfocado también a los negocios lo cual, ayuda mucho. Son un éxito las clases, también se adapatan a tus horarios. Puedes tener calses tanto individual como en grupo y siempre es muy efectivo y formal. Yo agradezco mucho haber comenzando a tener clases. Gracias.",
+    text: "Tomo clases con desde hace 4 años. Los profesores tiene herramientas muy elocuentes para enseñarte y también para aplicar las enseñanzas. Gracias a ellos me he podido mejorar mucho a la hora de desarrollar mi trabajo. Antes no me podia comunciar con soltura y ahora lo puedo hacer. Además de que se adaptan a tus necesidades, el vocabulario y las estructuras gramaticales es muy específico... Son un éxito las clases, también se adapatan a tus horarios. Puedes tener calses tanto individual como en grupo y siempre es muy efectivo y formal. Yo agradezco mucho haber comenzando a tener clases. Gracias.",
     title: "Manager interior design team at AGO Projects",
     alt: "Gloria Moya Paniagua",
     link: "www.linkedin.com/in/gloria-moya-paniagua-6886ab32/",
   },
   {
-    src: "/photo.webp",
+    src: "/testimonials/img8.jpeg",
     name: "Carlos Mendoza",
-    text: "Empecé a estudiar en English4professionals hace poco más de 4 años, justo poco antes de conseguir mi primero empleo donde todo el equipo era internacional y el hablar inglés, indispensable. Mi rol implicaba compartir estatus de proyectos, tareas, presentar propuestas, etc, y creo que no lo hubiera logrado sin Katherine. Lo que más me gusta es que las clases son prácticas desde el día uno, son planeadas en función de tus objetivos de aprendizaje, y que tú puedes elegir entre clases grupales o personales.",
+    text: "¡Me gusta estudiar inglés en @English4professionals! 🎉 En solo 1 año, me ayudaron a mejorar mi inglés como nunca antes. Ahora tengo más confianza y estoy listo para hablar inglés 🌍💪.",
     title: "Frontend Developer",
     alt: "Carlos Mendoza",
-    link: "https://www.linkedin.com/in/brendago/",
+    link: "https://www.linkedin.com/in/reloadercf",
   },
 ];

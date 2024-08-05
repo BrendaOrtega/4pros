@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export const Courses = () => {
   return (
-    <section className="max-w-7xl w-[90%] lg:w-full mx-auto mt-[120px] lg:mt-[160px]">
+    <section className="max-w-7xl w-[90%] xl:w-full mx-auto mt-[120px] lg:mt-[160px]">
       <h2 className="text-3xl md:text-5xl	 font-bold text-center">
         Conoce nuestros cursos
       </h2>
@@ -25,14 +25,14 @@ export const Courses = () => {
           </a>
         </div>
         <img
-          className="w-full lg:w-[50%] rounded-[40px] min-h-auto mt-10 lg:mt-0 lg:min-h-[480px]"
-          src="/business.svg"
+          className="w-full lg:w-[50%] rounded-[40px] min-h-auto mt-10 lg:mt-0 lg:min-h-[480px] hover:scale-95 transition-all"
+          src="/business.png"
         />
       </div>
       <div className="flex flex-wrap-reverse lg:flex-nowrap items-center mt-[64px] lg:mt-[200px]">
         <img
-          className="w-full lg:w-[50%] rounded-[40px] min-h-auto mt-10 lg:mt-0 lg:min-h-[480px]"
-          src="/general.svg"
+          className="w-full lg:w-[50%] rounded-[40px] min-h-auto mt-10 lg:mt-0 lg:min-h-[480px] hover:scale-95 transition-all"
+          src="/general.png"
         />
         <div className="pl-0 lg:pl-16 w-full lg:w-[50%]">
           <h3 className="text-2xl lg:text-4xl text-black font-semibold mb-8">
@@ -55,11 +55,12 @@ export const Courses = () => {
 };
 
 export const Banner = () => {
-  const images = ["/banner1.svg", "/banner2.svg"];
-  const photos = ["/banner-md1.png", "/banner-md2.svg"];
+  const images = ["/banner1.svg", "/banner2.png", "/banner3.png"];
+  const photos = ["/banner-md1.png", "/banner2-md.png", "/banner3-md.png"];
+  const small = ["/banner-s.svg", "/banner2-md.png", "/banner3-s.png"];
   return (
-    <section className="my-28 lg:my-[160px] max-w-7xl mx-auto  w-[90%] lg:w-full h-[304px] overflow-hidden rounded-[40px]">
-      <ImagesSlider className="h-full lg:hidden" images={photos}>
+    <section className="my-28 lg:my-[160px] max-w-7xl mx-auto  w-[90%] xl:w-full h-[304px] overflow-hidden rounded-[40px]">
+      <ImagesSlider className="h-full md:hidden" images={small}>
         <motion.div
           initial={{
             opacity: 0,
@@ -80,6 +81,26 @@ export const Banner = () => {
         </motion.div>
       </ImagesSlider>
       <ImagesSlider className="h-full hidden lg:flex " images={images}>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: -80,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.6,
+          }}
+          className="z-50 flex flex-col justify-center items-end mb-4 "
+        >
+          <a href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción.">
+            <PrimaryButton title="Me interesa la promoción" />
+          </a>
+        </motion.div>
+      </ImagesSlider>
+      <ImagesSlider className="h-full hidden md:flex " images={photos}>
         <motion.div
           initial={{
             opacity: 0,

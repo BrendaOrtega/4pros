@@ -35,13 +35,13 @@ export default function Home() {
 
 export const Navbar = () => (
   <section className=" fixed flex justify-center w-full z-50  items-center bg-white ">
-    <div className="w-[90%] lg:w-full max-w-7xl mx-auto flex items-center justify-between h-[112px]">
+    <div className="w-[90%] xl:w-full max-w-7xl mx-auto flex items-center justify-between h-[112px]">
       <Link to="/">
         <img className="h-24 md:h-32" src="/logo-black.png" />
       </Link>
       <div className="flex items-center gap-8">
         <Link to="/cursos">
-          <p>Cursos</p>
+          <p>Cursos grupales</p>
         </Link>
         <a href="#contacto">
           <PrimaryButton title="Contáctanos" />
@@ -54,7 +54,7 @@ export const Navbar = () => (
 export const Testimonial = () => {
   return (
     <section className="bg-[#F7F9FA] w-full py-16 lg:py-[120px] overflow-hidden">
-      <h2 className="text-3xl lg:text-5xl text-center mb-20 text-black font-semibold ">
+      <h2 className="text-3xl lg:text-5xl text-center mb-12 md:mb-20 text-black font-semibold ">
         Qué opinan nuestros estudiantes
       </h2>
       <SimpleAnimatedGallery pics={reviwes} />

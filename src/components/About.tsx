@@ -49,11 +49,11 @@ const companies = [
 
 export const About = () => {
   return (
-    <section className="max-w-7xl  w-[90%] lg:w-full mx-auto">
+    <section className="max-w-7xl  w-[90%] xl:w-full mx-auto">
       <div className="flex items-stretch mt-[120px] flex-wrap-reverse lg:flex-nowrap">
         <img
-          className="w-full lg:w-[50%] rounded-[40px] object-cover mt-10 lg:mt-0 lg:h-auto h-[380px]"
-          src="/about.svg"
+          className="w-full lg:w-[50%] rounded-[40px]  object-cover object-bottom  mt-10 lg:mt-0 lg:h-auto h-[380px]"
+          src="/about.png"
         />
         <div className="pl-0 lg:pl-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
           <h3 className="text-3xl lg:text-5xl text-black font-semibold mb-8">

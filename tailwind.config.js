@@ -16,9 +16,6 @@ export default {
         iron: "#4B5563",
       },
       backgroundImage: {
-        figure: "url(./Polygon.png)",
-        figureMobile: "url(./Polygon2.png)",
-        image: "url(./photo.webp)",
         footer: "url(./footerimg.png)",
         banner1: "url(./banner1.png)",
       },

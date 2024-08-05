@@ -81,7 +81,7 @@ export function ExpandableCard() {
               className="w-full max-w-[1100px]  h-full md:h-fit md:max-h-[90%]  flex flex-wrap lg:flex-nowrap  bg-white  sm:rounded-3xl overflow-hidden"
             >
               <motion.div
-                className="-mt-[50%] lg:mt-0"
+                className="-mt-[10%] lg:mt-0"
                 layoutId={`image-${active.title}-${id}`}
               >
                 <img
@@ -229,11 +229,16 @@ const cards = [
       return (
         <div>
           <p>
-            Dalia Vásquez tiene siete años de experiencia como maestra de inglés
-            y directora en English4professionals. Originaria de Veracruz, se
-            graduó en Diseño Industrial por el Tecnológico de Monterrey en 2011.
-            Su pasión por la enseñanza comenzó después de pasar un año como au
-            pair en el extranjero. En 2015, obtuvo la{" "}
+            Dalia Vásquez tiene{" "}
+            <span className="text-plant font-semibold">
+              {" "}
+              siete años de experiencia{" "}
+            </span>
+            como maestra de inglés y directora en English4professionals.
+            Originaria de Veracruz, se graduó en Diseño Industrial por el
+            Tecnológico de Monterrey en 2011. Su pasión por la enseñanza comenzó
+            después de pasar un año como au pair en el extranjero. En 2015,
+            obtuvo la{" "}
             <span className="text-plant font-semibold">
               certificación CELTA para enseñar inglés como segundo idioma{" "}
             </span>{" "}
@@ -270,7 +275,7 @@ const cards = [
 
   {
     title: "GINA GONZÁLEZ",
-    src: "/gina.svg",
+    src: "/gina.png",
 
     ctaText: "Play",
     ctaLink: "https://ui.aceternity.com/templates",
@@ -279,27 +284,30 @@ const cards = [
         <div className="text-lg">
           <p>
             Gina González tiene{" "}
-            <span className="text-plant">más de 20 años de experiencia</span> en
-            la enseñanza del inglés. Estudió el diploma de enseñanza del inglés
-            desde antes de la carrera y jamás ha dejado aquella primera pasión.
-            <span className="text-plant"> Es psicóloga de profesión</span> y
-            cuando no se encuentra en clases en línea, la verás diseñando{" "}
-            <span className="text-plant">
-              cursos y material educativo relacionado con habilidades de
-              negocios para profesionistas actuales.
+            <span className="text-plant font-semibold">
+              más de 20 años de experiencia
+            </span>{" "}
+            en la enseñanza del inglés. Estudió el diploma de enseñanza del
+            inglés desde antes de la carrera y jamás ha dejado aquella primera
+            pasión.{" "}
+            <span className="text-plant font-semibold">
+              Es psicóloga de profesión
+            </span>{" "}
+            y cuando no se encuentra en clases en línea, la verás diseñando
+            <span className="text-plant font-semibold">
+              cursos y material educativo relacionado con actualización de
+              habilidades de negocios para profesionistas.
             </span>
           </p>
           <p className="mt-4">
             Lo que más disfruta como maestra es el desafío de recibir
-            estudiantes desanimados y frustrados porque no han logrado mejorar
-            su inglés a pesar de muchos esfuerzos y trabajar en conjunto con
-            ellos para, por fin,{" "}
-            <span className="text-plant">
-              lograr sus objetivos y demostrarles que sí podían.{" "}
-            </span>{" "}
-            Su especialidad son los grupos intermedios y avanzados, por las
-            actividades interesantes y divertidas que se pueden realizar en ese
-            nivel.
+            estudiantes desanimados y frustrados porque no han logrado aprender
+            inglés a pesar de muchos esfuerzos y trabajar en conjunto con ellos
+            para, ayudarles a{" "}
+            <span className="text-plant font-semibold">
+              {" "}
+              lograr sus objetivos y demostrarles que sí podían.
+            </span>
           </p>
           <p className="mt-4">
             Actualmente vive en Metepec, Estado de México, con su esposo, su

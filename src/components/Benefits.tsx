@@ -2,7 +2,7 @@ import React from "react";
 
 export const Benefits = () => {
   return (
-    <section className="max-w-7xl w-[90%] lg:w-full py-[80px] lg:py-[120px] text-center mx-auto">
+    <section className="max-w-7xl w-[90%] xl:w-full py-[80px] lg:py-[120px] text-center mx-auto">
       {" "}
       <h2 className="text-3xl lg:text-5xl	 font-bold text-center">
         Qué nos hace diferentes
