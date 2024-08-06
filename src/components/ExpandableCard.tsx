@@ -126,7 +126,7 @@ export function ExpandableCard() {
                 <img
                   src={card.src}
                   alt={card.title}
-                  className="h-[400px] lg:h-[480px] w-full  rounded-lg object-cover object-top"
+                  className="h-auto lg:h-[480px] w-full  rounded-lg object-cover object-top"
                 />
               </motion.div>
             </div>
