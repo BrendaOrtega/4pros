@@ -22,17 +22,12 @@ export default function Cursos() {
   return (
     <main>
       <Navbar />
-      <section className=" max-w-7xl w-[90%] xl:w-full mx-auto  overflow-hidden pt-[80px] pb-0 xl:pb-20 ">
+      <section className=" max-w-7xl w-[90%] xl:w-full mx-auto  overflow-hidden pt-[120px] lg:pt-[80px] xl:pb-20 ">
         {/* <h2 className="text-3xl md:text-5xl	 font-bold text-center">
           Cursos grupales
         </h2> */}
         <div className="flex items-stretch mt-10 md:mt-[120px] flex-wrap lg:flex-nowrap">
-          <img
-            className="w-full lg:w-[50%] rounded-[40px]  object-cover object-left  mt-10 lg:mt-0 lg:h-auto h-[240px] mb-10 lg:mb-0"
-            src="/cursos.png"
-            alt="english meeting"
-          />
-          <div className="pl-0 lg:pl-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
+          <div className="pr-0 lg:pr-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
             <h3 className="text-3xl lg:text-5xl text-black font-semibold mb-8">
               Cursos grupales
             </h3>
@@ -90,6 +85,11 @@ export default function Cursos() {
               </a>
             </div>
           </div>
+          <img
+            className="w-full lg:w-[50%] hidden md:block rounded-[40px]  object-cover object-left  mt-10 lg:mt-0 lg:h-auto h-[240px] mb-10 lg:mb-0"
+            src="/cursos.png"
+            alt="english meeting"
+          />
         </div>
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-20 mt-10 md:mt-20">
           <Card
