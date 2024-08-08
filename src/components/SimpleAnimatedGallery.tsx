@@ -174,17 +174,18 @@ const Image = ({
         src={src}
         alt="gallery pic"
       />
-      {isActive && (
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href={link}
-          className="absolute bottom-0 right-2 text-4xl bg-white pt-4 px-2 hover:scale-105 transition-all active:scale-100 text-dark/80"
-          style={{ borderTopRightRadius: 40, borderTopLeftRadius: 40 }}
-        >
-          <FaLinkedin />
-        </a>
-      )}
+      {isActive &&
+        (link ? (
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href={link}
+            className="absolute bottom-0 right-2 text-4xl bg-white pt-4 px-2 hover:scale-105 transition-all active:scale-100 text-dark/80"
+            style={{ borderTopRightRadius: 40, borderTopLeftRadius: 40 }}
+          >
+            <FaLinkedin />
+          </a>
+        ) : null)}
     </motion.button>
   );
 };

@@ -57,7 +57,6 @@ export const reviwes = [
     text: "Me encanta, la profesora es muy paciente, ayuda mucho y hace que la pronunciación sea más fácil",
     title: "Business owner",
     alt: "Oscar de Jesús Montiel",
-    link: "https://www.linkedin.com/",
   },
   {
     src: "/testimonials/img6.png",

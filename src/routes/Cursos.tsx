@@ -9,6 +9,7 @@ import { twMerge } from "tailwind-merge";
 import { Banner } from "../components/Courses";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
+import SecondaryButton from "../common/SecondaryButton";
 
 export default function Cursos() {
   useEffect(() => {
@@ -21,11 +22,76 @@ export default function Cursos() {
   return (
     <main>
       <Navbar />
-      <section className=" max-w-7xl w-[90%] xl:w-full mx-auto  overflow-hidden pt-[180px] ">
-        <h2 className="text-3xl md:text-5xl	 font-bold text-center">
-          Cursos abiertos
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-20 mt-10 md:mt-20">
+      <section className=" max-w-7xl w-[90%] xl:w-full mx-auto  overflow-hidden pt-[80px] pb-0 xl:pb-20 ">
+        {/* <h2 className="text-3xl md:text-5xl	 font-bold text-center">
+          Cursos grupales
+        </h2> */}
+        <div className="flex items-stretch mt-10 md:mt-[120px] flex-wrap lg:flex-nowrap">
+          <img
+            className="w-full lg:w-[50%] rounded-[40px]  object-cover object-left  mt-10 lg:mt-0 lg:h-auto h-[240px] mb-10 lg:mb-0"
+            src="/cursos.png"
+            alt="english meeting"
+          />
+          <div className="pl-0 lg:pl-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
+            <h3 className="text-3xl lg:text-5xl text-black font-semibold mb-8">
+              Cursos grupales
+            </h3>
+            <p>
+              Conoce algunos de nuestros cursos grupales con lugares
+              disponibles, cada grupo tiene un{" "}
+              <span className="text-plant font-medium">
+                máximo de 6 estudiantes y un costo desde $125 mxn la hora.
+              </span>{" "}
+            </p>
+            <p className="my-6">
+              Si el curso que buscas no está aquí, escríbenos. Trabajamos con
+              cursos personalizados a horarios flexibles.
+            </p>
+            <CardCollapse
+              level="B2"
+              img="/card1.png"
+              title="Inglés de negocios - Nivel B2 (intermedio - avanzado)"
+              description="Martes, jueves y viernes, 7 - 8 AM"
+            />
+            <CardCollapse
+              level="C2"
+              img="/card2.png"
+              title="Inglés de negocios - Nivel C1 (Avanzado)"
+              description="Martes y jueves, 8 - 9 PM"
+            />
+            <CardCollapse
+              level="A2"
+              img="/card3.png"
+              title="Inglés general - Nivel A2 (Pre-intermedio)"
+              description="Lunes y miércoles, 8:30 - 9:30 PM"
+            />
+
+            <div className="mt-12 xl:mt-[100px] mb-10">
+              <a
+                href="https://buff.ly/39rX3FX"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SecondaryButton
+                  className="text-base mb-6 "
+                  title="Hacer examen de nivel"
+                />
+              </a>
+
+              <a
+                href="https://wa.me/525539599400"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <PrimaryButton
+                  title="Me interesa inscribirme a un curso"
+                  className=" mt-4 text-base"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-20 mt-10 md:mt-20">
           <Card
             image="/course1.svg"
             title="Inglés intermedio - avanzado B2"
@@ -47,7 +113,7 @@ export default function Cursos() {
             title="Inglés intermedio - avanzado"
             description="Se imparte los días Martes y Jueves de 7 a 8 am en grupos máximos de 6 personas. Desde $125 mxn la hora."
           />
-        </div>
+        </div> */}
       </section>
       <Banner />
       <Contact />
@@ -78,6 +144,31 @@ const Card = ({
       />
       <h3 className="text-dark text-3xl font-semibold mt-6">{title}</h3>
       <p className="text-iron mt-4 font-light">{description}</p>
+    </section>
+  );
+};
+
+const CardCollapse = ({
+  title,
+  description,
+  img,
+  level,
+}: {
+  title: string;
+  description: string;
+  img?: string;
+  level: string;
+}) => {
+  return (
+    <section className="border-[1px] border-[#EFEFEF] flex gap-3 p-2 rounded-2xl items-center mb-6">
+      <img className="rounded-lg w-16 h-16 object-cover" src={img} />
+      {/* <div className="rounded-2xl w-16 h-16 bg-plant flex justify-center  text-white text-2xl font-semibold items-center">
+        {level}
+      </div> */}
+      <div>
+        <h3 className="text-base font-bold text-dark">{title}</h3>
+        <p className="text-base">{description}</p>
+      </div>
     </section>
   );
 };

@@ -13,14 +13,19 @@ export const Courses = () => {
       <div className="flex flex-wrap lg:flex-nowrap items-center mt-[64px] lg:mt-[120px]">
         <div className="w-full lg:w-[50%]">
           <h3 className="text-2xl lg:text-4xl text-black font-semibold mb-8">
-            Business English courses
+            Cursos de inglés de negocios
           </h3>
           <div className="flex flex-col gap-4 mb-12 pr-0 lg:pr-16 ">
-            <Item text="Clases a todas las edades: niños, adolescentes, universitarios y adultos" />
-            <Item text="Clases de regularización, apoyo con tareas y proyectos, club de conversación" />
-            <Item text="Preparación para exámenes de certificación como TOEFL, IELTS y Cambridge A1 – C1" />
+            <Item text="Cursos completos 100% online, niveles principiante a avanzada" />
+            <Item text="Temas incluidos: entrevistas de trabajo, presentaciones, juntas y negociaciones" />
+            <Item text="Examen final alineado con estándares internacionales (CEFR)" />
+            <Item text="Certificado digital de cumplimiento del nivel" />
           </div>
-          <a href="https://wa.me/525539599400?text=¡Hola!%Quiero%20solicitar%20información%20de%20los%20Business%20English%20Courses%20para%20mi%20empresa">
+          <a
+            href="https://wa.me/525539599400?text=¡Hola!%Quiero%20solicitar%20información%20de%20los%20Business%20English%20Courses%20para%20mi%20empresa"
+            target="_blank"
+            rel="noreferrer"
+          >
             <PrimaryButton title="Solicitar información" />
           </a>
         </div>
@@ -36,16 +41,19 @@ export const Courses = () => {
         />
         <div className="pl-0 lg:pl-16 w-full lg:w-[50%]">
           <h3 className="text-2xl lg:text-4xl text-black font-semibold mb-8">
-            General English courses
+            Cursos de inglés general
           </h3>
           <div className="flex flex-col gap-4 mb-12 ">
-            <Item text="Examen de nivel y análisis de necesidades" />
-            <Item text="Evaluaciones mensuales" />
-            <Item text="Examen final alineado con estándares internacionales – Marco Común Europeo de Referencia para las lenguas (CEFR en inglés)" />
+            <Item text="Cursos completos 100% online de inglés general, niveles básico a avanzado " />
+            <Item text="Examen final alineado con estándares internacionales (CEFR)" />
             <Item text="Preparación para exámenes de certificación como TOEFL, IELTS y TOEIC" />
-            <Item text="Certificado de cumplimiento del nivel digital e impreso" />
+            <Item text="Certificado digital de cumplimiento del nivel " />
           </div>
-          <a href="https://wa.me/525539599400?text=¡Hola!%Quiero%20solicitar%20información%20de%20los%20curos.">
+          <a
+            href="https://wa.me/525539599400?text=¡Hola!%Quiero%20solicitar%20información%20de%20los%20curos."
+            target="_blank"
+            rel="noreferrer"
+          >
             <PrimaryButton title="Solicitar información" />
           </a>
         </div>
@@ -75,7 +83,11 @@ export const Banner = () => {
           }}
           className="z-50 flex flex-col justify-center items-end mb-4 "
         >
-          <a href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción.">
+          <a
+            href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+            target="_blank"
+            rel="noreferrer"
+          >
             <PrimaryButton title="Me interesa la promoción" />
           </a>
         </motion.div>
@@ -95,7 +107,11 @@ export const Banner = () => {
           }}
           className="z-50 flex flex-col justify-center items-end mb-4 "
         >
-          <a href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción.">
+          <a
+            href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+            target="_blank"
+            rel="noreferrer"
+          >
             <PrimaryButton title="Me interesa la promoción" />
           </a>
         </motion.div>
@@ -115,7 +131,11 @@ export const Banner = () => {
           }}
           className="z-50 flex flex-col justify-center items-end mb-4 "
         >
-          <a href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción.">
+          <a
+            href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+            target="_blank"
+            rel="noreferrer"
+          >
             <PrimaryButton title="Me interesa la promoción" />
           </a>
         </motion.div>

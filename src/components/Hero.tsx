@@ -4,6 +4,11 @@ import SecondaryButton from "../common/SecondaryButton";
 import { Link } from "react-router-dom";
 
 export const Hero = () => {
+  const handleClick = () => {
+    console.log("pollo");
+    const node = document.querySelector("#contacto");
+    node.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section className="pt-[180px]">
       <section className=" max-w-[90%] mx-auto xl:max-w-7xl backHero bg-center min-h-[75vh] bg-cover rounded-[40px] relative">
@@ -26,10 +31,12 @@ export const Hero = () => {
             </h1>
           </div>
           <div className="flex gap-4 pl-6">
-            <a href="#contacto">
-              <PrimaryButton title="Contáctanos" />
+            <div onClick={handleClick}>
+              <PrimaryButton title="Contactar" />
+            </div>
+            <a href="https://buff.ly/39rX3FX" target="_blank" rel="noreferrer">
+              <SecondaryButton title="Hacer examen de nivel" />
             </a>
-            <SecondaryButton title="Hacer examen de nivel" />
           </div>
         </div>
       </section>

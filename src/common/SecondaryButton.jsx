@@ -1,6 +1,8 @@
-export default function SecondaryButton({ title }) {
+import { twMerge } from "tailwind-merge";
+
+export default function SecondaryButton({ title, className }) {
   return (
-    <button className="flex group">
+    <button className={twMerge("flex group", className)}>
       <div className="bg-white h-10 text-dark px-4 rounded-full flex justify-center items-center text-center">
         {title}
       </div>
