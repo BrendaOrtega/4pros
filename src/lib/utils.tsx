@@ -52,14 +52,14 @@ export const reviwes = [
     link: "https://www.linkedin.com/in/marianalz/",
   },
   {
-    src: "/testimonials/img5.png",
+    src: "/testimonials/img6.png",
     name: "Oscar de Jesús Montiel",
     text: "Me encanta, la profesora es muy paciente, ayuda mucho y hace que la pronunciación sea más fácil",
     title: "Business owner",
     alt: "Oscar de Jesús Montiel",
   },
   {
-    src: "/testimonials/img6.png",
+    src: "/testimonials/img5.png",
     name: "Jorge Luis Andrade Vega",
     text: "Excelentes profesores, capaces y actualizados con las mejores herramientas para la imparticion de sus clases.",
     title: "Sales representative at UPL Agro",
