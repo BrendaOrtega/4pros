@@ -34,8 +34,8 @@ export const Footer = () => {
         </div>
         <div className="text-white font-light flex flex-col gap-3">
           <h3 className="text-[#B4B4B4] ">English4pros</h3>
-          <Link to="cursos">
-            <p>Cursos grupales</p>
+          <Link to="/cursos">
+            <p>Cursos abiertos</p>
           </Link>
           <Link to="/preguntas-frecuentes">
             <p>Preguntas frecuentes</p>

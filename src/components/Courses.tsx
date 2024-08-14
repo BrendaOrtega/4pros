@@ -16,7 +16,7 @@ export const Courses = () => {
             Cursos de inglés de negocios
           </h3>
           <div className="flex flex-col gap-4 mb-12 pr-0 lg:pr-16 ">
-            <Item text="Cursos completos 100% online, niveles principiante a avanzada" />
+            <Item text="Cursos completos 100% online, niveles principiante a avanzado" />
             <Item text="Temas incluidos: entrevistas de trabajo, presentaciones, juntas y negociaciones" />
             <Item text="Examen final alineado con estándares internacionales (CEFR)" />
             <Item text="Certificado digital de cumplimiento del nivel" />

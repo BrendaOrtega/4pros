@@ -17,7 +17,7 @@ export default function Faq() {
     });
   }, []);
   return (
-    <main>
+    <main className="relative">
       <Navbar />
       <section className=" max-w-7xl mx-auto   pt-[180px] ">
         <h2 className="text-3xl lg:text-5xl	 font-bold text-center">
@@ -28,6 +28,12 @@ export default function Faq() {
       <Banner />
       <Contact />
       <Footer />
+      <a href="https://wa.me/525539599400" target="_blank" rel="noreferrer">
+        <button className="fixed right-4 md:right-8 bottom-4 md:bottom-8 hover:translate-y-[-8px] transition-all bg-[#4AC959] rounded-full h-14  z-50 flex gap-2 items-center text-white px-4">
+          <img src="/whats.svg" />
+          Contactar
+        </button>
+      </a>
     </main>
   );
 }

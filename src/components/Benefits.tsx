@@ -12,27 +12,27 @@ export const Benefits = () => {
           img="/benefits/img1.svg"
           title="Experiencia"
           description=" Profesores 100% bilingües o que son hablantes nativos, capacitados y
-        certificados"
+        certificados."
         />
         <Benefit
           img="/benefits/img2.svg"
           title="Metodología comunicativa"
-          description=" Nuestras clases se enfocan en hablar y escuchar"
+          description=" Nuestras clases se enfocan en hablar y escuchar."
         />
         <Benefit
           img="/benefits/img3.svg"
           title="Enfoque práctico"
-          description=" Aprende el idioma que necesitas AHORA para situaciones reales, sin memorizar listas"
+          description=" Aprende el idioma que necesitas AHORA para situaciones reales, sin memorizar listas."
         />{" "}
         <Benefit
           img="/benefits/img4.svg"
           title="Personalización"
-          description=" Clases personalizadas y dinámicas, diseñadas según tus necesidades individuales"
+          description=" Clases personalizadas y dinámicas, diseñadas según tus necesidades individuales."
         />{" "}
         <Benefit
           img="/benefits/img5.svg"
           title="Grupos reducidos"
-          description=" Máximo 6 personas por grupo"
+          description=" Máximo 6 personas por grupo."
         />{" "}
         <Benefit
           img="/benefits/img6.svg"
@@ -42,7 +42,7 @@ export const Benefits = () => {
         <Benefit
           img="/benefits/img7.svg"
           title="Seguimiento"
-          description=" Evaluaciones mensuales para seguir de cerca tu progreso"
+          description=" Evaluaciones mensuales para seguir de cerca tu progreso."
         />{" "}
         <Benefit
           img="/benefits/img8.svg"

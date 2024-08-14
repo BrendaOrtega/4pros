@@ -20,7 +20,7 @@ export default function Cursos() {
     });
   }, []);
   return (
-    <main>
+    <main className="relative">
       <Navbar />
       <section className=" max-w-7xl w-[90%] xl:w-full mx-auto  overflow-hidden pt-[120px] lg:pt-[80px] xl:pb-20 ">
         {/* <h2 className="text-3xl md:text-5xl	 font-bold text-center">
@@ -29,23 +29,24 @@ export default function Cursos() {
         <div className="flex items-stretch mt-10 md:mt-[120px] flex-wrap lg:flex-nowrap">
           <div className="pr-0 lg:pr-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
             <h3 className="text-3xl lg:text-5xl text-black font-semibold mb-8">
-              Cursos grupales
+              Cursos abiertos
             </h3>
             <p>
-              Conoce algunos de nuestros cursos grupales con lugares
-              disponibles, cada grupo tiene un{" "}
+              Explora nuestros cursos en línea grupales con cupo disponible.
+              Cada grupo está limitado a{" "}
               <span className="text-plant font-medium">
-                máximo de 6 estudiantes y un costo desde $125 mxn la hora.
-              </span>{" "}
+                {" "}
+                6 estudiantes, con un costo desde $125 MXN por hora.
+              </span>
             </p>
             <p className="my-6">
-              Si el curso que buscas no está aquí, escríbenos. Trabajamos con
-              cursos personalizados a horarios flexibles.
+              Si no ves el curso que necesitas, por favor escríbenos. Ofrecemos
+              cursos personalizados con horarios flexibles.
             </p>
             <CardCollapse
               level="B2"
               img="/card1.png"
-              title="Inglés de negocios - Nivel B2 (intermedio - avanzado)"
+              title="Inglés de negocios - Nivel B2 (Intermedio - avanzado)"
               description="Martes, jueves y viernes, 7 - 8 AM"
             />
             <CardCollapse
@@ -118,6 +119,12 @@ export default function Cursos() {
       <Banner />
       <Contact />
       <Footer />
+      <a href="https://wa.me/525539599400" target="_blank" rel="noreferrer">
+        <button className="fixed right-4 md:right-8 bottom-4 md:bottom-8 hover:translate-y-[-8px] transition-all bg-[#4AC959] rounded-full h-14  z-50 flex gap-2 items-center text-white px-4">
+          <img src="/whats.svg" />
+          Contactar
+        </button>
+      </a>
     </main>
   );
 }
