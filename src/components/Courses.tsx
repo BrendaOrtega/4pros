@@ -22,7 +22,7 @@ export const Courses = () => {
             <Item text="Certificado digital de cumplimiento del nivel" />
           </div>
           <a
-            href="https://wa.me/525539599400?text=¡Hola!%Quiero%20solicitar%20información%20de%20los%20Business%20English%20Courses%20para%20mi%20empresa"
+            href="https://wa.me/525539599400?text=¡Hola!%20Quiero%20solicitar%20información%20de%20los%20Cursos%20de%20Inglés%20de%20negocios%20para%20mi%20empresa"
             target="_blank"
             rel="noreferrer"
           >
@@ -50,7 +50,7 @@ export const Courses = () => {
             <Item text="Certificado digital de cumplimiento del nivel " />
           </div>
           <a
-            href="https://wa.me/525539599400?text=¡Hola!%Quiero%20solicitar%20información%20de%20los%20curos."
+            href="https://wa.me/525539599400?text=¡Hola!%20Quiero%20solicitar%20información%20de%20los%20cursos%20de%20inglés%20general."
             target="_blank"
             rel="noreferrer"
           >
