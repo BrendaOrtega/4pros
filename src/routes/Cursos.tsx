@@ -92,31 +92,9 @@ export default function Cursos() {
             alt="english meeting"
           />
         </div>
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-20 mt-10 md:mt-20">
-          <Card
-            image="/course1.svg"
-            title="Inglés intermedio - avanzado B2"
-            description="Se imparte los días Martes, Jueves y Viernes de 7 a 8 am en grupos máximos de 6 personas. Desde $125 mxn la hora."
-          />
-          <Card
-            image="/course2.svg"
-            className="mt-0 md:mt-20 object-bottom"
-            title="Inglés Avanzado C1"
-            description="Se imparte los días Martes y Jueves de 8 a 9pm en grupos máximos de 6 personas. Desde $125 mxn la hora."
-          />
-          <Card
-            image="/course3.svg"
-            className=" object-bottom"
-            title="Inglés para profesionales"
-            description="Para un nivel A2 básico, este curso se imparte los días Lunes y Miércoles a las 8pm en grupos máximos de 6 personas. Desde $125 mxn la hora."
-          />
-          <EmptyCard
-            title="Inglés intermedio - avanzado"
-            description="Se imparte los días Martes y Jueves de 7 a 8 am en grupos máximos de 6 personas. Desde $125 mxn la hora."
-          />
-        </div> */}
       </section>
       <Banner />
+      <div className="mt-4 lg:mt-[40px]"></div>
       <Contact />
       <Footer />
       <a href="https://wa.me/525539599400" target="_blank" rel="noreferrer">

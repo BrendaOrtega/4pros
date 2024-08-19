@@ -79,7 +79,7 @@ export const SimpleAnimatedGallery = ({
                 src={pic.src}
                 key={pic.text}
                 isActive={isActive}
-                onClick={() => handlePicClick(i)}
+                // onClick={() => handlePicClick(i)}
               />
             );
           })}

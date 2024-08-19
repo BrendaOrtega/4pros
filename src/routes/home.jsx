@@ -45,7 +45,7 @@ export const Navbar = () => {
         <Link to="/">
           <img className="h-24 md:h-32" src="/logo-black.png" />
         </Link>
-        <div className="flex items-center gap-8">
+        <div className="flex text-right md:text-center items-center gap-8">
           <Link to="/cursos">
             <p>Cursos abiertos</p>
           </Link>

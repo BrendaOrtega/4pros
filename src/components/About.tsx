@@ -56,7 +56,7 @@ const companies = [
 
 export const About = () => {
   return (
-    <section className="max-w-7xl  w-[90%] xl:w-full mx-auto">
+    <section className="max-w-7xl  w-[90%] xl:w-full mx-auto mt-28 lg:mt-[160px]">
       <div className="flex items-stretch mt-[120px] flex-wrap-reverse lg:flex-nowrap">
         <img
           className="w-full lg:w-[50%] rounded-[40px]  object-cover object-bottom  mt-10 lg:mt-0 lg:h-auto h-[380px]"

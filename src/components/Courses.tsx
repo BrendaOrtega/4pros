@@ -22,7 +22,7 @@ export const Courses = () => {
             <Item text="Certificado digital de cumplimiento del nivel" />
           </div>
           <a
-            href="https://wa.me/525539599400?text=¡Hola!%20Quiero%20solicitar%20información%20de%20los%20Cursos%20de%20Inglés%20de%20negocios%20para%20mi%20empresa"
+            href="https://wa.me/525539599400?text=¡Hola!%20Quiero%20solicitar%20información%20de%20los%20Cursos%20de%20inglés%20de%20negocios%20para%20mi%20empresa."
             target="_blank"
             rel="noreferrer"
           >
@@ -50,7 +50,7 @@ export const Courses = () => {
             <Item text="Certificado digital de cumplimiento del nivel " />
           </div>
           <a
-            href="https://wa.me/525539599400?text=¡Hola!%20Quiero%20solicitar%20información%20de%20los%20cursos%20de%20inglés%20general."
+            href="https://wa.me/525539599400?text=¡Hola!%20Quiero%20solicitar%20información%20de%20los%20Cursos%20de%20inglés%20general."
             target="_blank"
             rel="noreferrer"
           >
@@ -67,7 +67,7 @@ export const Banner = () => {
   const photos = ["/banner-md1.png", "/banner2-md.png", "/banner3-md.png"];
   const small = ["/banner-s.svg", "/banner2-md.png", "/banner3-s.png"];
   return (
-    <section className="my-28 lg:my-[160px] max-w-7xl mx-auto  w-[90%] xl:w-full h-[304px] overflow-hidden rounded-[40px]">
+    <section className="mt-28 lg:mt-[160px] max-w-7xl mx-auto  w-[90%] xl:w-full h-[304px] overflow-hidden rounded-[40px]">
       <ImagesSlider className="h-full md:hidden" images={small}>
         <motion.div
           initial={{
@@ -146,7 +146,7 @@ export const Banner = () => {
 
 export const Item = ({ text }) => {
   return (
-    <section className="flex items-center gap-3 text-lg lg:text-xl	 text-iron font-light">
+    <section className="flex items-start gap-3 text-lg lg:text-xl	 text-iron font-light">
       <img src="/check.svg" />
       <p>{text}</p>
     </section>

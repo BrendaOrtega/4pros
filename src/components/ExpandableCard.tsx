@@ -275,7 +275,7 @@ const cards = [
 
   {
     title: "GINA GONZÁLEZ",
-    src: "/gina.png",
+    src: "/gina.svg",
 
     ctaText: "Play",
     ctaLink: "https://ui.aceternity.com/templates",

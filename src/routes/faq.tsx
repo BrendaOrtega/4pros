@@ -26,6 +26,7 @@ export default function Faq() {
       </section>
       <List />
       <Banner />
+      <div className="mt-4 lg:mt-[40px]"></div>
       <Contact />
       <Footer />
       <a href="https://wa.me/525539599400" target="_blank" rel="noreferrer">
@@ -51,7 +52,11 @@ export const List = () => (
             adolescentes y adultos, así como clases corporativas para empresas
             que desean proporcionar formación en inglés a sus empleados. Para
             más información sobre estas opciones, contáctenos en
-            <a className="underline text-plant ml-1">
+            <a
+              className="underline text-plant ml-1"
+              href="mailto:english4professionals@hotmail.com"
+              rel="noreferrer"
+            >
               english4professionals@hotmail.com.
             </a>
           </p>
