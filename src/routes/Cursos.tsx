@@ -6,7 +6,7 @@ import React from "react";
 import { Navbar } from "./home";
 import PrimaryButton from "../common/PrimaryButton";
 import { twMerge } from "tailwind-merge";
-import { Banner } from "../components/Courses";
+import { Banner, ScrollReveal } from "../components/Courses";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import SecondaryButton from "../common/SecondaryButton";
@@ -22,85 +22,87 @@ export default function Cursos() {
   return (
     <main className="relative">
       <Navbar />
-      <section className=" max-w-7xl w-[90%] xl:w-full mx-auto  overflow-hidden pt-[120px] lg:pt-[80px] xl:pb-20 ">
-        {/* <h2 className="text-3xl md:text-5xl	 font-bold text-center">
+      <ScrollReveal>
+        <section className=" max-w-7xl w-[90%] xl:w-full mx-auto  overflow-hidden pt-[160px] lg:pt-[80px] xl:pb-20 ">
+          {/* <h2 className="text-3xl md:text-5xl	 font-bold text-center">
           Cursos grupales
         </h2> */}
-        <div className="flex items-stretch mt-10 md:mt-[120px] flex-wrap lg:flex-nowrap">
-          <div className="pr-0 lg:pr-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
-            <h3 className="text-3xl lg:text-5xl text-black font-semibold mb-8">
-              Cursos abiertos
-            </h3>
-            <p>
-              Explora nuestros cursos en línea grupales con cupo disponible.
-              Cada grupo está limitado a{" "}
-              <span className="text-plant font-medium">
-                {" "}
-                6 estudiantes, con un costo desde $125 MXN por hora.
-              </span>
-            </p>
-            <p className="my-6">
-              Si no ves el curso que necesitas, por favor escríbenos. Ofrecemos
-              cursos personalizados con horarios flexibles.
-            </p>
-            <CardCollapse
-              level="B2"
-              img="/card1.png"
-              title="Inglés de negocios - Nivel B2 (Intermedio - avanzado)"
-              description="Martes, jueves y viernes, 7 - 8 AM"
-            />
-            <CardCollapse
-              level="C2"
-              img="/card2.png"
-              title="Inglés de negocios - Nivel C1 (Avanzado)"
-              description="Martes y jueves, 8 - 9 PM"
-            />
-            <CardCollapse
-              level="A2"
-              img="/card3.png"
-              title="Inglés general - Nivel A2 (Pre-intermedio)"
-              description="Lunes y miércoles, 8:30 - 9:30 PM"
-            />
+          <div className="flex items-stretch mt-0 md:mt-[120px] flex-wrap lg:flex-nowrap">
+            <div className="pr-0 lg:pr-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
+              <h3 className="text-3xl lg:text-5xl text-black font-bold mb-8">
+                Cursos abiertos
+              </h3>
+              <p>
+                Explora nuestros cursos en línea grupales con cupo disponible.
+                Cada grupo está limitado a{" "}
+                <span className="text-plant font-medium">
+                  {" "}
+                  6 estudiantes, con un costo desde $125 MXN por hora.
+                </span>
+              </p>
+              <p className="my-6">
+                Si no ves el curso que necesitas, por favor escríbenos.
+                Ofrecemos cursos personalizados con horarios flexibles.
+              </p>
+              <CardCollapse
+                level="B2"
+                img="/card1.png"
+                title="Inglés de negocios - Nivel B2 (Intermedio - avanzado)"
+                description="Martes, jueves y viernes, 7 - 8 AM"
+              />
+              <CardCollapse
+                level="C2"
+                img="/card2.png"
+                title="Inglés de negocios - Nivel C1 (Avanzado)"
+                description="Martes y jueves, 8 - 9 PM"
+              />
+              <CardCollapse
+                level="A2"
+                img="/card3.png"
+                title="Inglés general - Nivel A2 (Pre-intermedio)"
+                description="Lunes y miércoles, 8:30 - 9:30 PM"
+              />
 
-            <div className="mt-12 xl:mt-[100px] mb-10">
-              <a
-                href="https://buff.ly/39rX3FX"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SecondaryButton
-                  className="text-base mb-6 "
-                  title="Hacer examen de nivel"
-                />
-              </a>
+              <div className="mt-12 xl:mt-[100px] mb-10">
+                <a
+                  href="https://buff.ly/39rX3FX"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SecondaryButton
+                    className="text-base mb-6 "
+                    title="Hacer examen de nivel"
+                  />
+                </a>
 
-              <a
-                href="https://wa.me/525539599400"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <PrimaryButton
-                  title="Me interesa inscribirme a un curso"
-                  className=" mt-4 text-base"
-                />
-              </a>
+                <a
+                  href="https://wa.me/525539599400"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <PrimaryButton
+                    title="Me interesa inscribirme a un curso"
+                    className=" mt-4 text-base"
+                  />
+                </a>
+              </div>
             </div>
+            <img
+              className="w-full lg:w-[50%] hidden md:block rounded-[40px]  object-cover object-left  mt-10 lg:mt-0 lg:h-auto h-[240px] mb-10 lg:mb-0"
+              src="/cursos.png"
+              alt="english meeting"
+            />
           </div>
-          <img
-            className="w-full lg:w-[50%] hidden md:block rounded-[40px]  object-cover object-left  mt-10 lg:mt-0 lg:h-auto h-[240px] mb-10 lg:mb-0"
-            src="/cursos.png"
-            alt="english meeting"
-          />
-        </div>
-      </section>
+        </section>
+      </ScrollReveal>
       <Banner />
       <div className="mt-4 lg:mt-[40px]"></div>
       <Contact />
       <Footer />
       <a href="https://wa.me/525539599400" target="_blank" rel="noreferrer">
-        <button className="fixed right-4 md:right-8 bottom-4 md:bottom-8 hover:translate-y-[-8px] transition-all bg-[#4AC959] rounded-full h-14  z-50 flex gap-2 items-center text-white px-4">
+        <button className="fixed right-4 md:right-8 bottom-4 md:bottom-8 hover:translate-y-[-8px] transition-all bg-[#4AC959] rounded-full h-14  z-50 flex gap-2 items-center text-white px-2 md:px-4">
           <img src="/whats.svg" />
-          Contactar
+          <span className="hidden md:block">Contactar</span>
         </button>
       </a>
     </main>

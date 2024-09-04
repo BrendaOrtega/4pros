@@ -3,7 +3,7 @@ import "../App.css";
 import { ReactNode, useEffect, useState } from "react";
 import React from "react";
 import { Navbar } from "./home";
-import { Banner } from "../components/Courses";
+import { Banner, ScrollReveal } from "../components/Courses";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { AnimatePresence, easeOut, motion } from "framer-motion";
@@ -19,20 +19,22 @@ export default function Faq() {
   return (
     <main className="relative">
       <Navbar />
-      <section className=" max-w-7xl mx-auto   pt-[180px] ">
-        <h2 className="text-3xl lg:text-5xl	 font-bold text-center">
-          Preguntas frecuentes
-        </h2>
-      </section>
-      <List />
+      <ScrollReveal>
+        <section className=" max-w-7xl mx-auto   pt-[160px] md:pt-[180px] ">
+          <h2 className="text-3xl lg:text-5xl	 font-bold text-center">
+            Preguntas frecuentes
+          </h2>
+        </section>
+        <List />
+      </ScrollReveal>
       <Banner />
       <div className="mt-4 lg:mt-[40px]"></div>
       <Contact />
       <Footer />
       <a href="https://wa.me/525539599400" target="_blank" rel="noreferrer">
-        <button className="fixed right-4 md:right-8 bottom-4 md:bottom-8 hover:translate-y-[-8px] transition-all bg-[#4AC959] rounded-full h-14  z-50 flex gap-2 items-center text-white px-4">
+        <button className="fixed right-4 md:right-8 bottom-4 md:bottom-8 hover:translate-y-[-8px] transition-all bg-[#4AC959] rounded-full h-14  z-50 flex gap-2 items-center text-white px-2 md:px-4">
           <img src="/whats.svg" />
-          Contactar
+          <span className="hidden md:block">Contactar</span>
         </button>
       </a>
     </main>
@@ -146,7 +148,7 @@ export const Question = ({
   return (
     <div className="border-b-brand_pale border-b-[1px]">
       <button
-        className="w-full px-6 py-8 text-xl md:text-2xl font-medium text-left flex justify-between"
+        className="w-full px-2 md:px-6 py-6 md:py-8 text-xl md:text-2xl font-medium text-left flex justify-between"
         onClick={() => {
           setOpen((o) => !o);
         }}
@@ -170,7 +172,9 @@ export const Question = ({
             exit={{ opacity: 0, height: 0 }}
             transition={{ type: "spring", duration: 0.4, bounce: 0 }}
           >
-            <p className="text-lg text-iron font-light px-6 pb-8">{answer}</p>
+            <p className="text-lg text-iron font-light px-2 md:px-6 pb-8">
+              {answer}
+            </p>
           </motion.div>
         )}
       </AnimatePresence>

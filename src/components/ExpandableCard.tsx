@@ -1,14 +1,19 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { ScrollReveal } from "./Courses";
 
 export const Teachers = () => {
   return (
     <section className=" bg-[#F7F9FA] w-full py-[64px] lg:py-[120px] mt-20">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl text-black font-semibold mb-8 lg:mb-20">
-          Conoce al equipo directivo
-        </h2>
-        <ExpandableCard />
+        <ScrollReveal>
+          <h2 className="text-3xl lg:text-5xl text-black font-semibold mb-8 lg:mb-20">
+            Conoce al equipo directivo
+          </h2>
+        </ScrollReveal>
+        <ScrollReveal>
+          <ExpandableCard />
+        </ScrollReveal>
       </div>
     </section>
   );
