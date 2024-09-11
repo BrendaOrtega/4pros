@@ -110,8 +110,6 @@ export function ExpandableCard() {
                     <span className="text-white">hidden text</span>
                     <span className="text-white">hidden text</span>
                     <span className="text-white">hidden text</span>
-                    <span className="text-white">hidden text</span>
-                    <span className="text-white">hidden text</span>
                   </motion.div>
                 </div>
               </div>
