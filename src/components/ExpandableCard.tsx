@@ -85,7 +85,7 @@ export function ExpandableCard() {
               className="w-full max-w-[1100px]  h-full md:h-fit md:max-h-[90%]  flex flex-wrap lg:flex-nowrap  bg-white  sm:rounded-3xl overflow-hidden"
             >
               <motion.div
-                className="-mt-[5%] lg:mt-0"
+                className="-mt-[0%] lg:mt-0"
                 layoutId={`image-${active.title}-${id}`}
               >
                 <img
@@ -215,7 +215,7 @@ const cards = [
             , así como preparación para los exámenes
             <span className="text-plant font-semibold">
               TOEFL, IELTS y Cambridge.
-            </span>
+            </span>{" "}
             Además, ofrece una variedad de talleres, incluyendo
             <span className="text-plant font-semibold">
               {" "}
@@ -268,6 +268,7 @@ const cards = [
             Le apasiona el reto de ayudar a sus alumnos a comprender y utilizar
             el inglés mediante diversas actividades en diferentes contextos,
             <span className="text-plant font-semibold">
+              {" "}
               mejorando su fluidez, vocabulario y estructura.
             </span>
           </p>
@@ -302,7 +303,8 @@ const cards = [
             </span>{" "}
             y cuando no se encuentra en clases en línea, la verás diseñando
             <span className="text-plant font-semibold">
-              cursos y material educativo relacionado con actualización de
+              {" "}
+              cursos y material educativo relacionado con la actualización de
               habilidades de negocios para profesionistas.
             </span>
           </p>
@@ -310,7 +312,7 @@ const cards = [
             Lo que más disfruta como maestra es el desafío de recibir
             estudiantes desanimados y frustrados porque no han logrado aprender
             inglés a pesar de muchos esfuerzos y trabajar en conjunto con ellos
-            para, ayudarles a{" "}
+            para ayudarles a{" "}
             <span className="text-plant font-semibold">
               {" "}
               lograr sus objetivos y demostrarles que sí podían.
