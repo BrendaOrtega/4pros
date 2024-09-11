@@ -96,17 +96,22 @@ export function ExpandableCard() {
               </motion.div>
 
               <div>
-                <div className="pt-8 relative px-8">
+                <div className="pt-4 relative px-6">
                   <motion.div
                     layout
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-left font-light text-iron text-lg md:text-sm lg:text-base h-[360px] md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-left font-light text-iron text-lg md:text-sm lg:text-base h-[360px] md:h-fit pb-0 flex flex-col items-start gap-4 overflow-auto  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
                       : active.content}
+                    <span className="text-white">hidden text</span>
+                    <span className="text-white">hidden text</span>
+                    <span className="text-white">hidden text</span>
+                    <span className="text-white">hidden text</span>
+                    <span className="text-white">hidden text</span>
                   </motion.div>
                 </div>
               </div>
