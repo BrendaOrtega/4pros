@@ -3,6 +3,7 @@ import PrimaryButton from "../common/PrimaryButton";
 import { InfiniteMovingCards } from "./infinite";
 import SecondaryButton from "../common/SecondaryButton";
 import { ScrollReveal } from "./Courses";
+import { useTranslation } from "../hooks/useTranslation";
 
 const companies = [
   {
@@ -56,6 +57,7 @@ const companies = [
 ];
 
 export const About = () => {
+  const { t, updateLang } = useTranslation();
   return (
     <ScrollReveal>
       <section className="max-w-7xl  w-[90%] xl:w-full mx-auto mt-28 lg:mt-[160px]">
@@ -67,28 +69,11 @@ export const About = () => {
           />
           <div className="pl-0 lg:pl-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
             <h3 className="text-3xl lg:text-5xl text-black font-semibold mb-8">
-              Quienes somos
+              {t("about_title")}
             </h3>
-            <p className="mb-6">
-              English4pros fue fundada hace casi 10 años por tres profesoras de
-              inglés, dedicadas a enseñar inglés general y de negocios con un
-              enfoque innovador y personalizado. Nos une nuestra pasión por el
-              inglés y el firme compromiso de ayudar a nuestros alumnos a
-              comunicarse eficazmente.
-            </p>
-            <p className="mb-6">
-              Nuestra misión es clara: transformar el aprendizaje del inglés en
-              una experiencia positiva y enriquecedora. Todos nuestros maestros
-              son hablantes nativos de inglés o 100% bilingües certificados, con
-              formación en la docencia del idioma y muchos años de experiencia.
-            </p>
-            <p className="mb-8">
-              Nos caracteriza una pasión en la enseñanza de inglés para asegurar
-              que las clases apoyen a nuestros estudiantes a alcanzar sus metas,
-              asegurándonos de que el inglés sea una herramienta útil, no un
-              obstáculo. Con nuestra guía, les ayudamos a expresarse rápidamente
-              y con confianza, desbloqueando nuevas oportunidades profesionales.
-            </p>
+            <p className="mb-6">{t("about_text_one")}</p>
+            <p className="mb-6">{t("about_text_two")}</p>
+            <p className="mb-8">{t("about_text_three")}</p>
             <div>
               {/* <a href="#contacto">
               <SecondaryButton
@@ -100,10 +85,9 @@ export const About = () => {
                 href="mailto:english4professionals@hotmail.com"
                 rel="noreferrer"
               >
-                <PrimaryButton
-                  title="Me interesan las clases coorporativas"
-                  className=" mt-4 text-base"
-                />
+                <PrimaryButton className=" mt-4 text-base">
+                  <p> {t("cta_four")}</p>
+                </PrimaryButton>
               </a>
             </div>
           </div>

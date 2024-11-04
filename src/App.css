@@ -11,6 +11,20 @@
 .figure {
   background-image: url("/Polygon.png");
 }
+.custom-select {
+  width: 64px;
+  padding: 0 4px;
+  height: 40px;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  appearance: none;
+
+  -webkit-appearance: none;
+}
+.custom-select:focus-visible {
+  border: 2px solid #8bb236;
+}
 
 @media (max-width: 768px) {
   .figure {

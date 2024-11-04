@@ -1,15 +1,17 @@
 import { twMerge } from "tailwind-merge";
 import { FaArrowRight, FaArrowLeft, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import React from "react";
+import { useTranslation } from "../hooks/useTranslation";
 
 export type Pic = {
   src: string;
   name: string;
-  text: string;
+  text: ReactNode;
   title: string;
   link: string;
+  key: string;
 };
 export type SimpeAnimatedGalleryProps = {
   pics?: Pic[]; // Should be 8 minimum
@@ -17,13 +19,85 @@ export type SimpeAnimatedGalleryProps = {
 };
 
 export const SimpleAnimatedGallery = ({
-  pics = [],
   delay = 5,
 }: SimpeAnimatedGalleryProps) => {
+  const { t } = useTranslation();
+  const pics = [
+    {
+      key: "brenda",
+      src: "/testimonials/img1.png",
+      name: "Brenda González",
+      text: <p> {t("brenda")}</p>,
+      title: "Product Designer",
+      alt: "Brenda González",
+      link: "https://www.linkedin.com/in/brendago/",
+    },
+    {
+      key: "hector",
+      src: "/testimonials/img2.png",
+      name: "Héctor Campos",
+      text: <p> {t("hector")}</p>,
+      title: "Software Engineer",
+      alt: "Héctor Campos",
+      link: "https://www.linkedin.com/in/hectorbliss/",
+    },
+    {
+      key: "arzola",
+      src: "/testimonials/img3.png",
+      name: "Oscar Arzola",
+      text: <p> {t("arzola")}</p>,
+      title: "Release Manager, Pressbooks",
+      alt: "Oscar Arzola",
+      link: "www.linkedin.com/in/oscararzola",
+    },
+    {
+      key: "mariana",
+      src: "/testimonials/img4.png",
+      name: "Mariana López",
+      text: <p> {t("mariana")}</p>,
+      title: "Frontend Manager at Natoure, CoFounder of Pitahaya",
+      alt: "Mariana López",
+      link: "https://www.linkedin.com/in/marianalz/",
+    },
+    {
+      key: "oscar",
+      src: "/testimonials/img6.png",
+      name: "Oscar de Jesús Montiel",
+      text: <p> {t("oscar")}</p>,
+      title: "Business owner",
+      alt: "Oscar de Jesús Montiel",
+    },
+    {
+      key: "jorge",
+      src: "/testimonials/img5.png",
+      name: "Jorge Luis Andrade Vega",
+      text: <p> {t("jorge")}</p>,
+      title: "Sales representative at UPL Agro",
+      alt: "Jorge Luis Andrade Vega",
+      link: "https://www.linkedin.com/in/jorge-luis-andrade-26452b123",
+    },
+    {
+      key: "gloria",
+      src: "/testimonials/img7.jpg",
+      name: "Gloria Moya Paniagua",
+      text: <p> {t("gloria")}</p>,
+      title: "Manager interior design team at AGO Projects",
+      alt: "Gloria Moya Paniagua",
+      link: "www.linkedin.com/in/gloria-moya-paniagua-6886ab32/",
+    },
+    {
+      key: "carlos",
+      src: "/testimonials/img8.jpeg",
+      name: "Carlos Mendoza",
+      text: <p> {t("carlos")}</p>,
+      title: "Frontend Developer",
+      alt: "Carlos Mendoza",
+      link: "https://www.linkedin.com/in/reloadercf",
+    },
+  ];
   const [gallery, setGallery] = useState<Pic[]>(pics);
   const saved = useRef<Pic | null | undefined>(null);
   const interval = useRef<ReturnType<typeof setInterval> | null>(null);
-
   const placeInterval = () => {
     interval.current && clearInterval(interval.current);
     interval.current = setInterval(() => {
@@ -77,7 +151,7 @@ export const SimpleAnimatedGallery = ({
                 id={pic.text}
                 link={pic.link}
                 src={pic.src}
-                key={pic.text}
+                key={pic.key}
                 isActive={isActive}
                 // onClick={() => handlePicClick(i)}
               />
@@ -89,7 +163,7 @@ export const SimpleAnimatedGallery = ({
           <motion.div
             initial={{ opacity: 0, scale: 1.2 }}
             animate={{ opacity: 1, scale: 1 }}
-            key={active.text}
+            key={active.key}
             className="absolute inset-0 flex flex-col px-[5%] lg:px-28 justify-center box-border"
           >
             <h2 className="font-bold text-2xl text-black"> {active.name}</h2>

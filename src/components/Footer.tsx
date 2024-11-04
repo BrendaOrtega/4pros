@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "../hooks/useTranslation";
 
 export const Footer = () => {
+  const { t, updateLang } = useTranslation();
+
   return (
     <section className="bg-black rounded-t-[40px] w-full relative md:pl-6 xl:pl-0">
       <div className="bg-footer bg-cover bg-left-top absolute right-0 flex h-12 px-10 gap-2 pt-2">
@@ -35,14 +38,14 @@ export const Footer = () => {
         <div className="text-white font-light flex flex-col gap-3">
           <h3 className="text-[#B4B4B4] ">English4pros</h3>
           <Link to="/cursos">
-            <p>Cursos abiertos</p>
+            <p> {t("tab_one")}</p>
           </Link>
           <Link to="/preguntas-frecuentes">
-            <p>Preguntas frecuentes</p>
+            <p>{t("tab_two")}</p>
           </Link>
         </div>
         <div className="text-white font-light flex flex-col gap-3">
-          <h3 className="text-[#B4B4B4]">Contacto</h3>
+          <h3 className="text-[#B4B4B4]">{t("tab_three")}</h3>
           <a href="mailto:english4professionals@hotmail.com" rel="noreferrer">
             <p>english4professionals@hotmail.com</p>
           </a>
@@ -53,7 +56,7 @@ export const Footer = () => {
       </div>
       <hr className="bg-white/10 border-none mt-12 h-[1px]" />
       <p className="text-sm text-center font-light text-[#A19E9E] opacity-50 py-4">
-        Todos los derechos reservados english4pros® 2024
+        {t("caption")}
       </p>
     </section>
   );

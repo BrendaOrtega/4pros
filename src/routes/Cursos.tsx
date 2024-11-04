@@ -10,6 +10,7 @@ import { Banner, ScrollReveal } from "../components/Courses";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import SecondaryButton from "../common/SecondaryButton";
+import { useTranslation } from "../hooks/useTranslation";
 
 export default function Cursos() {
   useEffect(() => {
@@ -19,48 +20,40 @@ export default function Cursos() {
       behavior: "smooth",
     });
   }, []);
+  const { t } = useTranslation();
+
   return (
     <main className="relative">
       <Navbar />
       <ScrollReveal>
         <section className=" max-w-7xl w-[90%] xl:w-full mx-auto  overflow-hidden pt-[160px] lg:pt-[80px] xl:pb-20 ">
-          {/* <h2 className="text-3xl md:text-5xl	 font-bold text-center">
-          Cursos grupales
-        </h2> */}
           <div className="flex items-stretch mt-0 md:mt-[120px] flex-wrap lg:flex-nowrap">
             <div className="pr-0 lg:pr-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
               <h3 className="text-3xl lg:text-5xl text-black font-bold mb-8">
-                Cursos abiertos
+                <p> {t("tab_one")}</p>
               </h3>
               <p>
-                Explora nuestros cursos en línea grupales con cupo disponible.
-                Cada grupo está limitado a{" "}
-                <span className="text-plant font-medium">
-                  {" "}
-                  6 estudiantes, con un costo desde $125 MXN por hora.
-                </span>
+                <p> {t("text_one")}</p>{" "}
+                <span className="text-plant font-medium"> {t("text_two")}</span>
               </p>
-              <p className="my-6">
-                Si no ves el curso que necesitas, por favor escríbenos.
-                Ofrecemos cursos personalizados con horarios flexibles.
-              </p>
+              <p className="my-6">{t("text_three")}</p>
               <CardCollapse
                 level="B2"
                 img="/card1.png"
-                title="Inglés de negocios - Nivel B2 (Intermedio - avanzado)"
-                description="Martes, jueves y viernes, 7 - 8 AM"
+                title={t("group_one_title")}
+                description={t("group_one_date")}
               />
               <CardCollapse
                 level="C2"
                 img="/card2.png"
-                title="Inglés de negocios - Nivel C1 (Avanzado)"
-                description="Martes y jueves, 8 - 9 PM"
+                title={t("group_two_title")}
+                description={t("group_two_date")}
               />
               <CardCollapse
                 level="A2"
                 img="/card3.png"
-                title="Inglés general - Nivel A2 (Pre-intermedio)"
-                description="Lunes y miércoles, 8:30 - 9:30 PM"
+                title={t("group_three_title")}
+                description={t("group_three_date")}
               />
 
               <div className="mt-12 xl:mt-[100px] mb-10">
@@ -69,10 +62,9 @@ export default function Cursos() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <SecondaryButton
-                    className="text-base mb-6 "
-                    title="Hacer examen de nivel"
-                  />
+                  <SecondaryButton className="text-base">
+                    <p> {t("cta_two")}</p>
+                  </SecondaryButton>
                 </a>
 
                 <a
@@ -80,10 +72,9 @@ export default function Cursos() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <PrimaryButton
-                    title="Me interesa inscribirme a un curso"
-                    className=" mt-4 text-base"
-                  />
+                  <PrimaryButton className=" mt-4 text-base">
+                    <p> {t("cta_six")}</p>
+                  </PrimaryButton>
                 </a>
               </div>
             </div>

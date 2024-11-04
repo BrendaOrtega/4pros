@@ -8,10 +8,10 @@ import { Teachers } from "../components/ExpandableCard";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 import { SimpleAnimatedGallery } from "../components/SimpleAnimatedGallery";
-import { reviwes } from "../lib/utils";
 import { twMerge } from "tailwind-merge";
 import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 import { useState } from "react";
+import { useTranslation } from "../hooks/useTranslation";
 
 export default function Home() {
   return (
@@ -47,6 +47,12 @@ export const Navbar = () => {
   useMotionValueEvent(scrollYProgress, "change", (val) => {
     setZ(val > 0 ? true : false);
   });
+  const { t, updateLang } = useTranslation();
+
+  const onChange = () => {
+    // updateLang(value);
+    console.log("idioma", lang);
+  };
 
   return (
     <section
@@ -61,13 +67,27 @@ export const Navbar = () => {
         </Link>
         <div className="flex text-right md:text-center items-center gap-8">
           <Link to="/cursos">
-            <p>Cursos abiertos</p>
+            <p> {t("tab_one")}</p>
           </Link>
           <Link to="/preguntas-frecuentes" className="hidden md:block">
-            <p>Preguntas frecuentes</p>
+            <p> {t("tab_two")}</p>
           </Link>
+          <div>
+            <select
+              onClick={onChange}
+              className="custom-select bg-white focus:outline-none"
+              name="select"
+            >
+              <option value="es">🇲🇽 ES</option>
+              <option value="en" selected>
+                🇺🇸 EN
+              </option>
+            </select>
+          </div>
           <div onClick={handleClick}>
-            <PrimaryButton title="Contactar" />
+            <PrimaryButton>
+              <p> {t("cta_one")}</p>
+            </PrimaryButton>
           </div>
         </div>
       </div>
@@ -76,15 +96,17 @@ export const Navbar = () => {
 };
 
 export const Testimonial = () => {
+  const { t, updateLang } = useTranslation();
+
   return (
     <section className="bg-[#F7F9FA] w-full py-16 lg:py-[120px] overflow-hidden">
       <ScrollReveal>
         <h2 className="text-3xl lg:text-5xl text-center mb-12 md:mb-20 text-black font-semibold ">
-          Qué opinan nuestros estudiantes
+          {t("students_title")}
         </h2>{" "}
       </ScrollReveal>
       <ScrollReveal>
-        <SimpleAnimatedGallery pics={reviwes} />
+        <SimpleAnimatedGallery />
       </ScrollReveal>
     </section>
   );

@@ -1,6 +1,15 @@
 import { twMerge } from "tailwind-merge";
+import React, { ReactNode } from "react";
 
-export default function PrimaryButton({ title, className }) {
+export default function PrimaryButton({
+  title,
+  children,
+  className,
+}: {
+  title?: string;
+  className?: string;
+  children: ReactNode;
+}) {
   return (
     <button className="flex group">
       <div
@@ -9,7 +18,7 @@ export default function PrimaryButton({ title, className }) {
           className
         )}
       >
-        {title}
+        {children}
       </div>
       <div
         className={twMerge(

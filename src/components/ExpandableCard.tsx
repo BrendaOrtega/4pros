@@ -1,14 +1,17 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ScrollReveal } from "./Courses";
+import { useTranslation } from "../hooks/useTranslation";
 
 export const Teachers = () => {
+  const { t, updateLang } = useTranslation();
+
   return (
     <section className=" bg-[#F7F9FA] w-full py-[64px] lg:py-[120px] mt-20">
       <div className="max-w-7xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="text-3xl lg:text-5xl text-black font-semibold mb-8 lg:mb-20">
-            Conoce al equipo directivo
+            {t("teachers_title")}
           </h2>
         </ScrollReveal>
 
@@ -19,6 +22,116 @@ export const Teachers = () => {
 };
 
 export function ExpandableCard() {
+  const { t, updateLang } = useTranslation();
+  const cards = [
+    {
+      src: "/katherine.svg",
+      title: "Katherine Manson",
+      content: () => {
+        return (
+          <div>
+            <p>
+              {t("kath_one")}
+              <span className="text-plant font-semibold">
+                {" "}
+                {t("kath_two")}
+              </span>{" "}
+              {t("kath_three")}
+            </p>
+            <p className="mt-4">
+              {t("kath_four")}{" "}
+              <span className="text-plant font-semibold">{t("kath_five")}</span>{" "}
+              {t("kath_six")}
+            </p>
+            <p className="mt-4">
+              {t("kath_seven")}{" "}
+              <span className="text-plant font-semibold">
+                {" "}
+                {t("kath_eight")}
+              </span>
+              {t("kath_nine")}
+              <span className="text-plant font-semibold"> {t("kath_ten")}</span>
+            </p>
+          </div>
+        );
+      },
+    },
+    {
+      title: "DALIA VÁSQUEZ,",
+      src: "/dalia.svg",
+
+      content: () => {
+        return (
+          <div>
+            <p>
+              {t("dalia_one")}
+              <span className="text-plant font-semibold">
+                {" "}
+                {t("dalia_two")}{" "}
+              </span>
+              {t("dalia_three")}{" "}
+              <span className="text-plant font-semibold">
+                {t("dalia_four")}{" "}
+              </span>{" "}
+              {t("dalia_five")}{" "}
+              <span className="text-plant font-semibold">
+                {" "}
+                {t("dalia_six")}{" "}
+              </span>{" "}
+            </p>
+            <p className="mt-4">
+              {t("dalia_seven")}{" "}
+              <span className="text-plant font-semibold">
+                {t("dalia_eight")}
+              </span>{" "}
+              {t("dalia_nine")}
+              <span className="text-plant font-semibold">
+                {" "}
+                {t("dalia_ten")}
+              </span>
+            </p>
+            <p className="mt-4">{t("dalia_eleven")}</p>
+          </div>
+        );
+      },
+    },
+
+    {
+      title: "GINA GONZÁLEZ",
+      src: "/gina.svg",
+
+      ctaText: "Play",
+      ctaLink: "https://ui.aceternity.com/templates",
+      content: () => {
+        return (
+          <div className="text-lg">
+            <p>
+              {t("gina_one")}{" "}
+              <span className="text-plant font-semibold">{t("gina_two")} </span>{" "}
+              {t("gina_three")}{" "}
+              <span className="text-plant font-semibold">
+                {t("gina_four")}{" "}
+              </span>{" "}
+              {t("gina_five")}{" "}
+              <span className="text-plant font-semibold">
+                {" "}
+                {t("gina_six")}{" "}
+              </span>
+            </p>
+            <p className="mt-4">
+              {t("gina_seven")}{" "}
+              <span className="text-plant font-semibold">
+                {" "}
+                {t("gina_eight")}{" "}
+              </span>
+            </p>
+            <p className="mt-4">{t("gina_nine")} </p>
+          </div>
+        );
+      },
+    },
+  ];
+
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
@@ -176,157 +289,6 @@ export const CloseIcon = () => {
     </motion.svg>
   );
 };
-
-const cards = [
-  {
-    src: "/katherine.svg",
-    title: "Katherine Manson",
-    content: () => {
-      return (
-        <div>
-          <p>
-            Formada y certificada en Vancouver, Canadá, Katherine Manson
-            <span className="text-plant font-semibold">
-              {" "}
-              ha creado cursos, capacitado a profesores y enseñado inglés para
-              negocios y general durante más de 20 años.
-            </span>{" "}
-            Ella admira a todos sus alumnos, pero siente una especial admiración
-            por aquellos que, a pesar de haber estudiado inglés durante años,
-            aún carecen de la confianza o las habilidades necesarias para
-            comunicarse de manera efectiva en el idioma.
-          </p>
-          <p className="mt-4">
-            El objetivo de Katherine con cada estudiante en
-            English4professionals es{" "}
-            <span className="text-plant font-semibold">
-              transformar el inglés en un activo valioso en lugar de una barrera
-              en sus vidas profesionales.
-            </span>{" "}
-            Su enfoque se centra en ofrecer a los estudiantes las herramientas
-            necesarias para alcanzar sus metas individuales.
-          </p>
-          <p className="mt-4">
-            Katherine enseña{" "}
-            <span className="text-plant font-semibold">
-              {" "}
-              inglés de negocios
-            </span>
-            , así como preparación para los exámenes
-            <span className="text-plant font-semibold">
-              TOEFL, IELTS y Cambridge.
-            </span>{" "}
-            Además, ofrece una variedad de talleres, incluyendo
-            <span className="text-plant font-semibold">
-              {" "}
-              la creación de presentaciones atractivas, la preparación para
-              entrevistas de trabajo y la conducción de reuniones de negocios
-              efectivas.
-            </span>
-          </p>
-        </div>
-      );
-    },
-  },
-  {
-    title: "DALIA VÁSQUEZ,",
-    src: "/dalia.svg",
-
-    content: () => {
-      return (
-        <div>
-          <p>
-            Dalia Vásquez tiene{" "}
-            <span className="text-plant font-semibold">
-              {" "}
-              siete años de experiencia{" "}
-            </span>
-            como maestra de inglés y directora en English4professionals.
-            Originaria de Veracruz, se graduó en Diseño Industrial por el
-            Tecnológico de Monterrey en 2011. Su pasión por la enseñanza comenzó
-            después de pasar un año como au pair en el extranjero. En 2015,
-            obtuvo la{" "}
-            <span className="text-plant font-semibold">
-              certificación CELTA para enseñar inglés como segundo idioma{" "}
-            </span>{" "}
-            en la Ciudad de México. A lo largo de su carrera, ha tenido el
-            privilegio de trabajar con niños, adolescentes y adultos,
-            impartiendo clases tanto de inglés general como de negocios, desde
-            nivel básico hasta avanzado. En la actualidad,{" "}
-            <span className="text-plant font-semibold">
-              {" "}
-              se especializa en niveles básico, principiante y pre-intermedio.{" "}
-            </span>{" "}
-          </p>
-          <p className="mt-4">
-            Para Dalia, enseñar inglés en línea ha sido una experiencia
-            sumamente enriquecedora, ya que le ha permitido conectar con
-            estudiantes de toda la república y{" "}
-            <span className="text-plant font-semibold">
-              adaptarse a sus horarios y necesidades.
-            </span>{" "}
-            Le apasiona el reto de ayudar a sus alumnos a comprender y utilizar
-            el inglés mediante diversas actividades en diferentes contextos,
-            <span className="text-plant font-semibold">
-              {" "}
-              mejorando su fluidez, vocabulario y estructura.
-            </span>
-          </p>
-          <p className="mt-4">
-            Actualmente, Dalia reside en Córdoba, Veracruz, donde disfruta de
-            caminatas, la lectura, el cine y pasar tiempo con su familia.
-          </p>
-        </div>
-      );
-    },
-  },
-
-  {
-    title: "GINA GONZÁLEZ",
-    src: "/gina.svg",
-
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <div className="text-lg">
-          <p>
-            Gina González tiene{" "}
-            <span className="text-plant font-semibold">
-              más de 20 años de experiencia
-            </span>{" "}
-            en la enseñanza del inglés. Estudió el diploma de enseñanza del
-            inglés desde antes de la carrera y jamás ha dejado aquella primera
-            pasión.{" "}
-            <span className="text-plant font-semibold">
-              Es psicóloga de profesión
-            </span>{" "}
-            y cuando no se encuentra en clases en línea, la verás diseñando
-            <span className="text-plant font-semibold">
-              {" "}
-              cursos y material educativo relacionado con la actualización de
-              habilidades de negocios para profesionistas.
-            </span>
-          </p>
-          <p className="mt-4">
-            Lo que más disfruta como maestra es el desafío de recibir
-            estudiantes desanimados y frustrados porque no han logrado aprender
-            inglés a pesar de muchos esfuerzos y trabajar en conjunto con ellos
-            para ayudarles a{" "}
-            <span className="text-plant font-semibold">
-              {" "}
-              lograr sus objetivos y demostrarles que sí podían.
-            </span>
-          </p>
-          <p className="mt-4">
-            Actualmente vive en Metepec, Estado de México, con su esposo, su
-            hijo pequeño y sus dos perros.
-          </p>
-        </div>
-      );
-    },
-  },
-];
 
 export const useOutsideClick = (
   ref: React.RefObject<HTMLDivElement>,
