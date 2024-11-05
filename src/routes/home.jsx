@@ -68,9 +68,9 @@ export const Navbar = () => {
     >
       <div className="w-[90%] xl:w-full max-w-7xl mx-auto flex items-center justify-between h-20 md:h-[112px]">
         <Link to="/">
-          <img className="h-24 md:h-32" src="/logo-black.png" />
+          <img className="h-24 w-auto md:h-32" src="/logo-black.png" />
         </Link>
-        <div className="flex text-right md:text-center items-center gap-8">
+        <div className="flex text-right md:text-center items-center gap-3 md:gap-8">
           <Link to="/cursos">
             <p> {t("tab_one")}</p>
           </Link>
@@ -89,9 +89,22 @@ export const Navbar = () => {
             </select>
           </div>
           <div onClick={handleClick}>
-            <PrimaryButton>
-              <p> {t("cta_one")}</p>
-            </PrimaryButton>
+            <button className="flex group">
+              <div
+                className={twMerge(
+                  "bg-dark h-10 text-white px-2 md:px-4 rounded-full flex justify-center items-center text-center"
+                )}
+              >
+                {t("cta_one")}
+              </div>
+              <div
+                className={twMerge(
+                  "bg-dark rounded-full hidden w-10 h-10 md:flex items-center justify-center group-hover:rotate-[45deg] transition-all"
+                )}
+              >
+                <img src="/back.svg" alt="arrow" />
+              </div>
+            </button>
           </div>
         </div>
       </div>

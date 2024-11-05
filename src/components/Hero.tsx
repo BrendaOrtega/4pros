@@ -18,7 +18,7 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 1 }}
-        className=" max-w-[90%] mx-auto xl:max-w-7xl backHero bg-slate-300 bg-center min-h-[75vh] bg-cover rounded-[40px] relative"
+        className=" max-w-[90%] mx-auto xl:max-w-7xl backHero bg-[#F2F2F2] bg-center min-h-[75vh] bg-cover rounded-[40px] relative"
       >
         <div className="pt-6 bg-cover h-[248px]  md:h-[280px] bg-left md:bg-bottom	 bg-no-repeat  figure w-full lg:w-[70%] xl:w-[50%] flex flex-col  justify-start items-start absolute left-0 md:left-6 lg:left-[70px] -top-16">
           <div className="hidden xl:block">

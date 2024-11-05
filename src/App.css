@@ -6,7 +6,7 @@
   color: #888;
 }
 .backHero {
-  background-image: url("/cover.png");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/4pros%2Fcover.png?alt=media&token=d1eb4e0f-d543-4244-82b4-4d63db37c3d1");
 }
 .figure {
   background-image: url("/Polygon.png");
@@ -29,5 +29,10 @@
 @media (max-width: 768px) {
   .figure {
     background-image: url("/Polygon2.png");
+  }
+  .custom-select {
+    width: 50px;
+    font-size: 14px;
+    padding: 0 2px;
   }
 }
