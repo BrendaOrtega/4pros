@@ -14,6 +14,8 @@ import { useState } from "react";
 import { useTranslation } from "../hooks/useTranslation";
 
 export default function Home() {
+  const { t, updateLang } = useTranslation();
+
   return (
     <main className="relative">
       <Navbar />
@@ -29,7 +31,7 @@ export default function Home() {
       <a href="https://wa.me/525539599400" target="_blank" rel="noreferrer">
         <button className="fixed right-4 md:right-8 bottom-4 md:bottom-8 hover:translate-y-[-8px] transition-all bg-[#4AC959] rounded-full h-14  z-50 flex gap-2 items-center text-white px-2 md:px-4">
           <img src="/whats.svg" />
-          <span className="hidden md:block">Contactar</span>
+          <span className="hidden md:block">{t("whats")}</span>
         </button>
       </a>
     </main>
@@ -47,11 +49,14 @@ export const Navbar = () => {
   useMotionValueEvent(scrollYProgress, "change", (val) => {
     setZ(val > 0 ? true : false);
   });
-  const { t, updateLang } = useTranslation();
+  const { t, updateLang, lang } = useTranslation();
 
-  const onChange = () => {
-    // updateLang(value);
-    console.log("idioma", lang);
+  const onChange = (event) => {
+    updateLang(event.target.value);
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
+    console.log("idioma");
   };
 
   return (
@@ -74,14 +79,13 @@ export const Navbar = () => {
           </Link>
           <div>
             <select
-              onClick={onChange}
+              onChange={onChange}
               className="custom-select bg-white focus:outline-none"
               name="select"
+              value={lang}
             >
               <option value="es">🇲🇽 ES</option>
-              <option value="en" selected>
-                🇺🇸 EN
-              </option>
+              <option value="en">🇺🇸 EN</option>
             </select>
           </div>
           <div onClick={handleClick}>
@@ -96,7 +100,7 @@ export const Navbar = () => {
 };
 
 export const Testimonial = () => {
-  const { t, updateLang } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className="bg-[#F7F9FA] w-full py-16 lg:py-[120px] overflow-hidden">

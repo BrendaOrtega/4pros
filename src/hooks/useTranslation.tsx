@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const useTranslation = () => {
-  const [diccionario, setDiccionario] = useState(dic);
+  const [diccionario] = useState(dic);
+  const [lang, setLang] = useState("es");
 
   const t = (key: string) => {
-    const lang = localStorage.getItem("lang") || "en"; // default!
+    const lang = localStorage.getItem("lang") || "es"; // default!
     return diccionario[key][lang];
   };
 
@@ -12,11 +13,19 @@ export const useTranslation = () => {
 
   const updateLang = (lang: string = "es") => {
     localStorage.setItem("lang", lang);
+    setLang(lang);
   };
+
+  useEffect(() => {
+    const lang = localStorage.getItem("lang");
+    if (!lang) return;
+    setLang(lang);
+  }, []);
 
   return {
     t,
     updateLang,
+    lang,
   };
 };
 
@@ -67,6 +76,10 @@ const dic = {
   },
   tab_three: {
     es: "Contacto",
+    en: "Contact",
+  },
+  whats: {
+    es: "Contactar",
     en: "Contact",
   },
   caption: {

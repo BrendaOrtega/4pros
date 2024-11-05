@@ -91,97 +91,218 @@ export const ScrollReveal = ({ children }: { children: ReactNode }) => {
 };
 
 export const Banner = () => {
-  const { t, updateLang } = useTranslation();
+  const { t, lang } = useTranslation();
 
-  // const images = ["/banner1.svg", "/banner2.png", "/banner3.png"];
-  const images = ["/banner1.svg", "/banner2.png"];
-  // const photos = ["/banner-md1.png", "/banner2-md.png", "/banner3-md.png"];
-  const photos = ["/banner-md1.png", "/banner2-md.png"];
-  // const small = ["/banner-s.svg", "/banner2-md.png", "/banner3-s.png"];
-  const small = ["/banner-s.svg", "/banner2-md.png"];
+  const large = [
+    "/banner1.svg",
+    "/banner4-xl.svg",
+    "/banner2.png",
+    "/banner5-xl.svg",
+  ];
+  const largeEn = [
+    "/banner1-xl-en.svg",
+    "/banner4-xl-en.svg",
+    "/banner2-xl-en.svg",
+    "/banner5-xl-en.svg",
+  ];
+
+  const small = [
+    "/banner-s.svg",
+    "/banner4-xs.svg",
+    "/banner2-md.png",
+    "/banner5-xs.svg",
+  ];
+  const smallEn = [
+    "/banner1-xs-en.svg",
+    "/banner4-xs-en.svg",
+    "/banner2-xs-en.svg",
+    "/banner5-xs-en.svg",
+  ];
+  const mediumEn = [
+    "/banner1-xs-en.svg",
+    "/banner4-md-en.svg",
+    "/banner2-xs-en.svg",
+    "/banner5-md-en.svg",
+  ];
+  const medium = [
+    "/banner-md1.png",
+    "/banner4-md.svg",
+    "/banner2-md.png",
+    "/banner5-md.svg",
+  ];
   return (
-    <ScrollReveal>
-      <section className="mt-28 lg:mt-[160px] max-w-7xl mx-auto  w-[90%] xl:w-full h-[304px] overflow-hidden rounded-[40px]">
-        <ImagesSlider className="h-full md:hidden" images={small}>
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: -80,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 0.6,
-            }}
-            className="z-50 flex flex-col justify-center items-end mb-4 "
-          >
-            <a
-              href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
-              target="_blank"
-              rel="noreferrer"
+    <>
+      <ScrollReveal>
+        {lang === "es" && (
+          <section className="mt-28 lg:mt-[160px] max-w-7xl mx-auto  w-[90%] xl:w-full h-[304px] overflow-hidden rounded-[40px]">
+            <ImagesSlider className="h-full md:hidden" images={small}>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: -80,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                }}
+                className="z-50 flex flex-col justify-center items-end mb-4 "
+              >
+                <a
+                  href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <PrimaryButton>
+                    <p> {t("cta_five")}</p>
+                  </PrimaryButton>
+                </a>
+              </motion.div>
+            </ImagesSlider>
+            <ImagesSlider className="h-full hidden lg:flex " images={large}>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: -80,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                }}
+                className="z-50 flex flex-col justify-center items-end mb-4 "
+              >
+                <a
+                  href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <PrimaryButton>
+                    <p> {t("cta_five")}</p>
+                  </PrimaryButton>
+                </a>
+              </motion.div>
+            </ImagesSlider>
+            <ImagesSlider className="h-full hidden md:flex " images={medium}>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: -80,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                }}
+                className="z-50 flex flex-col justify-center items-end mb-4 "
+              >
+                <a
+                  href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <PrimaryButton>
+                    <p> {t("cta_five")}</p>
+                  </PrimaryButton>
+                </a>
+              </motion.div>
+            </ImagesSlider>
+          </section>
+        )}
+
+        {lang === "en" && (
+          <section className="mt-28 lg:mt-[160px] max-w-7xl mx-auto  w-[90%] xl:w-full h-[304px] overflow-hidden rounded-[40px]">
+            <ImagesSlider className="h-full md:hidden" images={smallEn}>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: -80,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                }}
+                className="z-50 flex flex-col justify-center items-end mb-4 "
+              >
+                <a
+                  href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <PrimaryButton>
+                    <p> {t("cta_five")}</p>
+                  </PrimaryButton>
+                </a>
+              </motion.div>
+            </ImagesSlider>
+            <ImagesSlider className="h-full hidden lg:flex " images={largeEn}>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: -80,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                }}
+                className="z-50 flex flex-col justify-center items-end mb-4 "
+              >
+                <a
+                  href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <PrimaryButton>
+                    <p> {t("cta_five")}</p>
+                  </PrimaryButton>
+                </a>
+              </motion.div>
+            </ImagesSlider>
+            <ImagesSlider
+              className="h-full hidden md:flex lg:hidden  "
+              images={mediumEn}
             >
-              <PrimaryButton>
-                <p> {t("cta_five")}</p>
-              </PrimaryButton>
-            </a>
-          </motion.div>
-        </ImagesSlider>
-        <ImagesSlider className="h-full hidden lg:flex " images={images}>
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: -80,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 0.6,
-            }}
-            className="z-50 flex flex-col justify-center items-end mb-4 "
-          >
-            <a
-              href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
-              target="_blank"
-              rel="noreferrer"
-            >
-              <PrimaryButton>
-                <p> {t("cta_five")}</p>
-              </PrimaryButton>
-            </a>
-          </motion.div>
-        </ImagesSlider>
-        <ImagesSlider className="h-full hidden md:flex " images={photos}>
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: -80,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 0.6,
-            }}
-            className="z-50 flex flex-col justify-center items-end mb-4 "
-          >
-            <a
-              href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
-              target="_blank"
-              rel="noreferrer"
-            >
-              <PrimaryButton>
-                <p> {t("cta_five")}</p>
-              </PrimaryButton>
-            </a>
-          </motion.div>
-        </ImagesSlider>
-      </section>
-    </ScrollReveal>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: -80,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.6,
+                }}
+                className="z-50 flex flex-col justify-center items-end mb-4 "
+              >
+                <a
+                  href="https://wa.me/525539599400?text=¡Hola!%20Me%20interesa%20la%20promoción."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <PrimaryButton>
+                    <p> {t("cta_five")}</p>
+                  </PrimaryButton>
+                </a>
+              </motion.div>
+            </ImagesSlider>
+          </section>
+        )}
+      </ScrollReveal>
+    </>
   );
 };
 

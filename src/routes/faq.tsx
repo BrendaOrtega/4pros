@@ -37,7 +37,7 @@ export default function Faq() {
       <a href="https://wa.me/525539599400" target="_blank" rel="noreferrer">
         <button className="fixed right-4 md:right-8 bottom-4 md:bottom-8 hover:translate-y-[-8px] transition-all bg-[#4AC959] rounded-full h-14  z-50 flex gap-2 items-center text-white px-2 md:px-4">
           <img src="/whats.svg" />
-          <span className="hidden md:block">{t("tab_three")}</span>
+          <span className="hidden md:block">{t("whats")}</span>
         </button>
       </a>
     </main>

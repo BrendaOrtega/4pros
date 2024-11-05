@@ -148,7 +148,7 @@ export const SimpleAnimatedGallery = ({
             const isActive = i === gallery.length - 2;
             return (
               <Image
-                id={pic.text}
+                id={pic.key}
                 link={pic.link}
                 src={pic.src}
                 key={pic.key}
