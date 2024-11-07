@@ -30,10 +30,10 @@ export default function Cursos() {
           <div className="flex items-stretch mt-0 md:mt-[120px] flex-wrap lg:flex-nowrap">
             <div className="pr-0 lg:pr-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">
               <h3 className="text-3xl lg:text-5xl text-black font-bold mb-8">
-                <p> {t("tab_one")}</p>
+                {t("tab_one")}
               </h3>
               <p>
-                <p> {t("text_one")}</p>{" "}
+                {t("text_one")}
                 <span className="text-plant font-medium"> {t("text_two")}</span>
               </p>
               <p className="my-6">{t("text_three")}</p>

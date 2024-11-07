@@ -40,11 +40,11 @@ const dic = {
   },
   hero_title_three: {
     es: "el dominio del inglés!",
-    en: "mastering English.",
+    en: "towards English fluency!",
   },
   cta_one: {
     es: "Contactar",
-    en: "Contact",
+    en: "Contact us",
   },
   cta_two: {
     es: "Hacer el examen de nivel",
@@ -52,7 +52,7 @@ const dic = {
   },
   cta_three: {
     es: "Solicitar información",
-    en: "Request information",
+    en: "More information",
   },
   cta_four: {
     es: "Me interesan las clases corporativas",
@@ -60,7 +60,7 @@ const dic = {
   },
   cta_five: {
     es: "Me interesa la promoción",
-    en: "I’d like to know more",
+    en: "I’d like more information",
   },
   cta_six: {
     es: "Me interesa inscribirme al curso",
@@ -68,7 +68,7 @@ const dic = {
   },
   tab_one: {
     es: "Cursos abiertos",
-    en: "Open courses",
+    en: "Classes currently available",
   },
   tab_two: {
     es: "Preguntas frecuentes",
@@ -76,11 +76,11 @@ const dic = {
   },
   tab_three: {
     es: "Contacto",
-    en: "Contact",
+    en: "Contact information",
   },
   whats: {
     es: "Contactar",
-    en: "Contact",
+    en: "Contact us",
   },
   caption: {
     es: "Todos los derechos reservados english4pros 2024",
@@ -133,47 +133,47 @@ const dic = {
   },
   about_title: {
     es: "Quienes somos",
-    en: "Who we are",
+    en: "About us",
   },
   about_text_one: {
     es: "English4pros fue fundada hace casi 10 años por tres profesoras de inglés, dedicadas a enseñar ingles general y de negocios con un enfoque innovador y personalizado. Nos une nuestra pasión por el inglés y el firme compromiso de ayudar a nuestros alumnos a comunicarse eficazmente. ",
-    en: "English4pros was founded nearly 10 years ago by three dedicated English teachers committed to teaching general and business English in an innovative and personalized way. We share a passion for the English language and a strong commitment to helping our students communicate effectively.",
+    en: "English4Pros was founded nearly 10 years ago by three English teachers dedicated to teaching general and business English with an innovative and personalized approach. We share a passion for English and a strong commitment to helping our students communicate effectively.",
   },
   about_text_two: {
     es: "Nuestra misión es clara: transformar el aprendizaje del inglés en una experiencia positiva y enriquecedora. Todos nuestros maestros son hablantes nativos de inglés o 100% bilingües certificados, con formación en la docencia del idioma y muchos años de experiencia.  ",
-    en: "Our mission is simple: to make learning English a positive and enriching experience. All our teachers are native English speakers or fully certified bilingual professionals, trained in language instruction and equipped with years of experience.",
+    en: "Our mission is clear: to transform English learning into a positive and enriching experience. Our teachers are native English speakers or certified 100% bilingual, trained, certified, and experienced English instructors. ",
   },
   about_text_three: {
     es: "Nos caracteriza una pasión en la enseñanza de inglés para asegurar que las clases apoyen a nuestros estudiantes a alcanzar sus metas, asegurándonos de que el inglés sea una herramienta útil, no un obstáculo. Con nuestra guía, les ayudamos a expresarse rápidamente y con confianza, desbloqueando nuevas oportunidades profesionales.  ",
-    en: "We’re passionate about teaching English and strive to ensure our classes help students achieve their goals, making English a valuable tool rather than a barrier. With our support, students can express themselves quickly and confidently, opening doors to new professional opportunities.",
+    en: "Our passion for teaching English in a way that helps students meet their goals sets us apart. We strive to help make English a useful tool rather than an obstacle. Our goal is to provide the support needed to help students express themselves quickly and confidently, unlocking new professional opportunities.",
   },
   teachers_title: {
     es: "Conoce al equipo directivo",
-    en: "Meet our management team",
+    en: "Meet the Management Team",
   },
   kath_one: {
     es: "Formada y certificada en Vancouver, Canadá, Katherine Manson",
-    en: "Trained and certified in Vancouver, Canada, Katherine Manson",
+    en: "Trained and certified in Vancouver, Canada,  Katherine Manson",
   },
   kath_two: {
     es: " ha creado cursos, capacitado a profesores y enseñado inglés para negocios y general durante más de 20 años.",
-    en: "has spent over 20 years creating courses, training teachers, and teaching both business and general English.",
+    en: "has created courses, trained teachers, and taught business and general English for over 20 years. ",
   },
   kath_three: {
     es: "Ella admira a todos sus alumnos, pero siente una especial admiración por aquellos que a pesar de haber estudiado ingles durante años, aún carecen de la confianza o las habilidades necesarias para comunicarse de manera efectiva en el idioma.",
-    en: "She admires all her students, especially those who have studied English for years but still struggle with confidence or effective communication.",
+    en: "She admires all her students but has a special admiration for those who, despite studying English for years, still lack the confidence or skills needed to communicate effectively.",
   },
   kath_four: {
     es: "El objetivo de Katherine con cada estudiante en English4professionals es",
-    en: "Katherine's goal at English4professionals is",
+    en: "Katherine’s goal with each student at English4Pros is",
   },
   kath_five: {
     es: "transformar el inglés en un activo valioso en lugar de una barrera en sus vidas profesionales.",
-    en: " to turn English into a valuable asset for each student rather than a barrier in their professional lives.",
+    en: "to transform English into a valuable asset instead of a barrier in their professional lives.",
   },
   kath_six: {
     es: "Su enfoque se centra en ofrecer a los estudiantes las herramientas necesarias para alcanzar sus metas individuales.",
-    en: "She focuses on equipping students with the tools they need to reach their individual goals.",
+    en: "Her focus is on providing students with the tools needed to achieve their individual goals.",
   },
   kath_seven: {
     es: "Katherine enseña ",
@@ -181,15 +181,15 @@ const dic = {
   },
   kath_eight: {
     es: "ingles de negocios, así como preparación para los exámenes TOEFL, IELTS y Cambridge.",
-    en: "business English and prepares students for exams like TOEFL, IELTS, and Cambridge.",
+    en: "Business English, as well as preparation for TOEFL, IELTS, and Cambridge exams.",
   },
   kath_nine: {
     es: "Además, ofrece una variedad de ",
-    en: " She also offers a variety of ",
+    en: "She also offers a variety of ",
   },
   kath_ten: {
     es: "talleres, incluyendo la creación de presentaciones atractivas, la preparación para entrevistas de trabajo y la conducción de reuniones de negocios efectivas.",
-    en: "workshops, including how to create engaging presentations, prepare for job interviews, and conduct effective business meetings.",
+    en: "workshops, including creating engaging presentations, job interview preparation, and conducting effective business meetings. ",
   },
   dalia_one: {
     es: "Dalia Vásquez tiene",
@@ -283,7 +283,7 @@ const dic = {
   },
   benefit_one_text: {
     es: "Profesores 100% bilingües o que son hablantes nativos, capacitados y certificados. ",
-    en: "Our teachers are either native speakers or fully bilingual, all trained and certified.",
+    en: "100% bilingual or native-speaking teachers, trained and certified",
   },
   benefit_two_title: {
     es: "Personalización",
@@ -291,15 +291,15 @@ const dic = {
   },
   benefit_two_text: {
     es: "Clases personalizadas y dinámicas, diseñadas según tus necesidades individuales. ",
-    en: "Enjoy dynamic classes tailored to meet your individual needs.",
+    en: "Customized and dynamic classes designed to match your individual needs",
   },
   benefit_three_title: {
     es: "Seguimiento",
-    en: "Follow-up",
+    en: "Follow-Up",
   },
   benefit_three_text: {
     es: "Evaluaciones mensuales para seguir de cerca tu progreso.",
-    en: "We provide monthly assessments to help you track your progress closely.",
+    en: "Monthly evaluations to closely monitor your progress",
   },
   benefit_four_title: {
     es: "Metodología comunicativa ",
@@ -307,7 +307,7 @@ const dic = {
   },
   benefit_four_text: {
     es: "Nuestras clases se enfocan en hablar y escuchar. ",
-    en: "Our focus is on enhancing your speaking and listening skills.",
+    en: "Our classes focus on speaking and listening",
   },
   benefit_five_title: {
     es: "Grupos reducidos",
@@ -315,11 +315,11 @@ const dic = {
   },
   benefit_five_text: {
     es: "Máximo 6 personas por grupo. ",
-    en: "Classes have a maximum of 6 students, ensuring personalized attention.",
+    en: "Maximum of 6 people per group",
   },
   benefit_six_title: {
     es: "Clases en vivo 100% en línea",
-    en: "100% Online Live Classes",
+    en: "Live Classes 100% Online",
   },
   benefit_six_text: {
     es: "Para que aproveches al máximo tu tiempo. Puedes tomarlas desde cualquier lugar con una computadora y conexión a internet. ",
@@ -331,7 +331,7 @@ const dic = {
   },
   benefit_seven_text: {
     es: "Aprende el idioma que necesitas AHORA para situaciones reales, sin memorizar listas",
-    en: "Learn the language you need right now for real-life situations, without the hassle of memorizing long lists.",
+    en: "Learn the language you need NOW for real situations, without memorizing lists.",
   },
   benefit_eight_title: {
     es: "¿Te perdiste una clase?",
@@ -339,7 +339,7 @@ const dic = {
   },
   benefit_eight_text: {
     es: "No te preocupes. Ofrecemos clases de recuperación sin costo para que siempre estes al día con el material de la clase. ",
-    en: "No worries! We offer free makeup classes so you can stay up to date with the material.",
+    en: "Don’t worry. We offer free makeup classes to ensure you stay up to date with the material",
   },
   benefit_nine_title: {
     es: "Dos clases sin costo",
@@ -347,16 +347,16 @@ const dic = {
   },
   benefit_nine_text: {
     es: "Para asegurarnos de que el nivel, horario, material y metodología se adaptan a tus necesidades. ",
-    en: "Try us out to see if our level, schedule, materials, and methodology fit your needs perfectly.",
+    en: "To ensure the level, schedule, materials, and methodology fit your needs",
   },
 
   students_title: {
     es: "Qué opinan nuestros estudiantes",
-    en: "What Said Our Students",
+    en: "What our students say",
   },
   contact_title: {
     es: "¿Quieres saber más sobre nuestros cursos? Escríbenos.",
-    en: "Interested in Learning More About Our Courses? Reach Out to Us!",
+    en: "Want to learn more about our courses? Contact us.",
   },
   brenda: {
     es: "Empecé a estudiar en English4professionals hace poco más de 4 años, justo poco antes de conseguir mi primer empleo donde todo el equipo era internacional y el hablar inglés, indispensable. Mi rol implicaba compartir estatus de proyectos, tareas, presentar propuestas, etc, y creo que no lo hubiera logrado sin Katherine. Lo que más me gusta es que las clases son prácticas desde el día uno, son planeadas en función de tus objetivos de aprendizaje, y que tú puedes elegir entre clases grupales o personales.",
@@ -394,15 +394,15 @@ const dic = {
   // OPEN COURSES
   text_one: {
     es: "Explora nuestros cursos en línea grupales con cupo disponible. Cada grupo está limitado a",
-    en: "Check out our online group courses with available spots! Each group is limited to",
+    en: "Check out our group courses with space available. Each group is limited to",
   },
   text_two: {
-    es: "6 estudiantes, con un costo desde 125 MXN por hora.",
-    en: "6 students, with prices starting at just 125 MXN per hour.",
+    es: "6 estudiantes, con un costo desde 200 MXN por hora.",
+    en: "6 students, with prices starting from 200 MXN per hour.",
   },
   text_three: {
     es: "Si no ves el curso que necesitas, por favor escríbenos. Ofrecemos cursos personalizados con horarios flexibles. ",
-    en: "If you don’t see the course you’re looking for, feel free to reach out. We offer personalized courses with flexible schedules.",
+    en: "If you don't see the course you need, please contact us. We offer personalized courses with flexible schedules.",
   },
   group_one_title: {
     es: "Inglés de negocios - Nivel B2 (Intermedio – avanzado)",
@@ -421,12 +421,12 @@ const dic = {
     en: "Tuesday and Thursday, 8 - 9 PM",
   },
   group_three_title: {
-    es: "Inglés general - Nivel A2 (Pre-intermedio)",
-    en: "General English - Level A2 (Pre-intermediate)",
+    es: "Inglés de negocios - Nivel A2 (Pre-intermedio)",
+    en: "Business English - Level A2 (Pre-Intermediate):",
   },
   group_three_date: {
     es: "Lunes y miércoles, 8:30 - 9:30 PM",
-    en: "Monday and Wednesday, 8:30 - 9:30 PM",
+    en: "Monday and Wednesday, 8:30 – 9:30 PM",
   },
 
   // FAQ
@@ -444,7 +444,7 @@ const dic = {
   },
   faq_two_answer: {
     es: "Nuestras clases tienen una duración de una hora y recomendamos asistir de 2 a 3 veces por semana, con actividades en casa diarias para practicar.",
-    en: "Our classes last one hour, and we recommend attending 2 to 3 times a week, with daily homework activities to practice.",
+    en: "Our classes are one hour, and we recommend taking classes 2 to 3 times a week, with daily homework activities to practice what you learned in the class.",
   },
   faq_three_title: {
     es: "¿Cuánto dura un nivel?",
@@ -456,19 +456,19 @@ const dic = {
   },
   faq_four_title: {
     es: "¿Cuál es el costo de las clases? ",
-    en: "How much are the classes?",
+    en: "How much do the classes cost?",
   },
   faq_four_answer: {
     es: "Las clases comienzan a 200 pesos por hora, pero los costos individuales varían según el número de personas en el grupo. Por favor, contáctenos directamente para obtener más información sobre situaciones específicas.",
-    en: "The price of the classes varies depending on the group size. Check out the table below for the cost per person for different group sizes, and remember, you’ll get a 10% discount if you buy a package of 20 classes!",
+    en: "Classes start at 200 pesos per hour, but Individual costs vary depending on the number of people in the group. Please contact us directly for more information about specific situations. ",
   },
   faq_five_title: {
     es: "¿Como se realiza el pago? ",
-    en: "How do I pay?",
+    en: "How is payment made?",
   },
   faq_five_answer: {
     es: "El pago se realiza mensualmente por transferencia bancaria. ",
-    en: "You can make payments monthly through bank transfer.",
+    en: "Payment is made monthly via bank transfer.",
   },
   faq_six_title: {
     es: "¿Que pasa si no puedo asistir a una clase? ",
@@ -480,11 +480,11 @@ const dic = {
   },
   faq_seven_title: {
     es: "¿Ofrecen clases especializadas para ciertas profesiones o habilidades? ",
-    en: "Do you offer specialized classes for specific professions or skills?",
+    en: "Do you offer classes for specific professions or skills?",
   },
   faq_seven_answer: {
     es: "Llevamos a cabo un análisis de necesidades al inicio del curso para garantizar que nuestras clases de inglés para negocios se adapten específicamente a las necesidades del grupo. ",
-    en: "Yes, we conduct a needs analysis at the start of the course to ensure our business English classes are tailored to the group’s specific needs.",
+    en: "We conduct a needs analysis at the start of the course to ensure our Business English classes are tailored to the specific needs of the group.",
   },
   faq_eight_title: {
     es: "¿Están incluidos los materiales en el costo? ",
@@ -512,15 +512,15 @@ const dic = {
   },
   faq_eleven_title: {
     es: "¿Cuánto tiempo tardaré en hablar inglés con fluidez en mi trabajo? ",
-    en: "How long will it take me to speak English fluently at work? ",
+    en: "How long will it take me to speak English fluently at work?",
   },
   faq_eleven_answer: {
     es: "Esto dependerá de tu nivel actual y del tiempo que puedas dedicar al inglés tanto dentro como fuera de las clases. Por lo general, pasar de un nivel principiante a un nivel altamente competente toma alrededor de 4 años o unas 800 horas de clases.",
-    en: "This depends on your current level and how much time you can dedicate to studying English both in and out of class. Generally, it takes about 4 years or around 800 hours of classes to move from a beginner to a highly competent level.",
+    en: "This will depend on your current level and how much time you can dedicate to English both inside and outside of class. Generally, moving from a beginner level to a highly proficient level takes about 4 years or around 800 hours of classes.",
   },
   faq_twelve_title: {
     es: "¿Recibiré un certificado al finalizar el curso? ",
-    en: "Will I receive a certificate when I finish the course?",
+    en: "Will I receive a certificate when I complete the course?",
   },
   faq_twelve_answer: {
     es: "Si. Recibirás un certificado al final de cada nivel. ",
@@ -536,10 +536,10 @@ const dic = {
   },
   faq_fourteen_title: {
     es: "¿Ofrecen descuentos para inscripciones grupales de la misma empresa? ",
-    en: "Sí. Si alguien que recomiendas se inscribe en una de nuestras clases, recibirás 4 clases gratis y también tu amigo. No es necesario que ambos estén en el mismo grupo.",
+    en: "Do you offer discounts for group enrollments?",
   },
   faq_fourteen_answer: {
-    es: "Do you offer discounts for group registrations from the same company?",
+    es: "Sí. Si alguien que recomiendas se inscribe en una de nuestras clases, recibirás 4 clases gratis y también tu amigo. No es necesario que ambos estén en el mismo grupo.",
     en: "Yes! For every person you refer who becomes a student at English4Professionals, you can earn 8 free classes (about 1 month free). They don’t have to be in the same group.",
   },
   faq_fifteen_title: {
