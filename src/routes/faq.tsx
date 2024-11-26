@@ -108,10 +108,18 @@ export const List = () => {
           question={t("faq_fourteen_title")}
           answer={t("faq_fourteen_answer")}
         />
-        <Question
-          question={t("faq_fifteen_title")}
-          answer={t("faq_fifteen_answer")}
-        />
+        <SpecialQuestion question={t("faq_fifteen_title")}>
+          <p className="text-lg text-iron font-light px-2 md:px-6 pb-8">
+            {t("faq_fifteen_answer")}{" "}
+            <a href="https://buff.ly/39rX3FX" target="_blank" rel="noreferrer">
+              <span className="text-plant font-medium">
+                {" "}
+                {t("faq_fifteen_answer_button")}
+              </span>
+            </a>
+            {t("faq_fifteen_answer_second")}
+          </p>
+        </SpecialQuestion>
         <Question
           question={t("faq_sixteen_title")}
           answer={t("faq_sixteen_answer")}
@@ -124,6 +132,32 @@ export const List = () => {
           question={t("faq_eighteen_title")}
           answer={t("faq_eighteen_answer")}
         />
+        <SpecialQuestion question={t("faq_eighteen_title")}>
+          <p className="text-lg text-iron font-light px-2 md:px-6 pb-8">
+            {t("faq_eighteen_answer")}{" "}
+            <a
+              href="https://www.facebook.com/English4Pros"
+              target="_blank"
+              rel="noreferrer"
+              className="text-plant font-medium underline"
+            >
+              Facebook
+            </a>
+            ,{" "}
+            <a
+              href="https://www.linkedin.com/company/english-4-professionals/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-plant font-medium underline"
+            >
+              Linkedin
+            </a>{" "}
+            and{" "}
+            {/* <a href="https://buff.ly/39rX3FX" target="_blank" rel="noreferrer"> */}
+            Instagram {/* </a>{" "} */}
+            {t("faq_eighteen_answer_second")}
+          </p>
+        </SpecialQuestion>
       </div>
     </section>
   );
@@ -168,6 +202,51 @@ export const Question = ({
             <p className="text-lg text-iron font-light px-2 md:px-6 pb-8">
               {answer}
             </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export const SpecialQuestion = ({
+  children,
+  question,
+}: {
+  children: ReactNode;
+  question: ReactNode;
+}) => {
+  const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
+
+  return (
+    <div className="border-b-brand_pale border-b-[1px]">
+      <button
+        className="w-full px-2 md:px-6 py-6 md:py-8 text-xl md:text-2xl font-medium text-left flex justify-between"
+        onClick={() => {
+          setOpen((o) => !o);
+        }}
+      >
+        <p className="w-[90%]">{question}</p>
+        {open ? (
+          <div className="bg-black rounded-full h-10 w-10 flex justify-center items-center  transition-all rotate-90">
+            <img src="/arrow-right.svg" />
+          </div>
+        ) : (
+          <div className="bg-black rounded-full h-10 w-10 flex justify-center items-center  transition-all">
+            <img src="/arrow-right.svg" />
+          </div>
+        )}
+      </button>
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ type: "spring", duration: 0.4, bounce: 0 }}
+          >
+            {children}
           </motion.div>
         )}
       </AnimatePresence>

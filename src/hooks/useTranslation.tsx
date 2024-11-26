@@ -64,7 +64,7 @@ const dic = {
   },
   cta_six: {
     es: "Me interesa inscribirme al curso",
-    en: "I'd like to enrolling in the course",
+    en: "I'd like to enroll in the course",
   },
   tab_one: {
     es: "Cursos abiertos",
@@ -72,7 +72,7 @@ const dic = {
   },
   tab_two: {
     es: "Preguntas frecuentes",
-    en: "Frequently Asked Questions",
+    en: "Frequently asked questions",
   },
   tab_three: {
     es: "Contacto",
@@ -547,8 +547,16 @@ const dic = {
     en: "How can I find out my level of English?",
   },
   faq_fifteen_answer: {
-    es: "Puedes realizar una prueba de nivel de inglés gratuita haciendo clic en el botón ubicado en la parte superior de esta página. Una vez recibamos los resultados, nos pondremos en contacto contigo para informarte sobre tu nivel y las clases disponibles. ",
-    en: "You can take a free English level test by clicking the button at the top of this page. Once we receive your results, we’ll reach out to let you know your level and the available classes.",
+    es: "Puedes realizar una prueba de nivel de inglés gratuita ",
+    en: "You can take a free English level test ",
+  },
+  faq_fifteen_answer_button: {
+    es: " haciendo clic aquí ",
+    en: " by clicking here.",
+  },
+  faq_fifteen_answer_second: {
+    es: "Una vez recibamos los resultados, nos pondremos en contacto contigo para informarte sobre tu nivel y las clases disponibles. ",
+    en: " Once we receive your results, we’ll reach out to let you know your level and the available classes.",
   },
   faq_sixteen_title: {
     es: "¿Qué plataformas utilizan para las clases en línea? ",
@@ -571,7 +579,11 @@ const dic = {
     en: "How can I stay in touch with English4Professionals?",
   },
   faq_eighteen_answer: {
-    es: "Puedes contactarnos directamente a través de WhatsApp y correo electrónico. Además, te invitamos a seguirnos en Facebook, LinkedIn e Instagram (haz clic en cada icono de redes sociales para visitar nuestro perfil). ",
-    en: "You can reach out to us directly via WhatsApp and email. Plus, we invite you to follow us on Facebook, LinkedIn, and Instagram (click on each social media icon to visit our profile).",
+    es: "Puedes contactarnos directamente a través de WhatsApp y correo electrónico. Además, te invitamos a seguirnos en ",
+    en: "You can reach out to us directly via WhatsApp and email. Plus, we invite you to follow us on ",
+  },
+  faq_eighteen_answer_second: {
+    es: " (haz clic en cada icono de redes sociales para visitar nuestro perfil). ",
+    en: "(click on each social media icon to visit our profile).",
   },
 };
