@@ -153,8 +153,14 @@ export const List = () => {
               Linkedin
             </a>{" "}
             and{" "}
-            {/* <a href="https://buff.ly/39rX3FX" target="_blank" rel="noreferrer"> */}
-            Instagram {/* </a>{" "} */}
+            <a
+              href="https://www.instagram.com/e4pros?igsh=c2swNnVxYnd4OXpo&utm_source=qr"
+              target="_blank"
+              rel="noreferrer"
+              className="text-plant font-medium underline"
+            >
+              Instagram
+            </a>{" "}
             {t("faq_eighteen_answer_second")}
           </p>
         </SpecialQuestion>
