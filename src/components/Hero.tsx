@@ -22,14 +22,14 @@ export const Hero = () => {
       >
         <div className="pt-6 bg-cover h-[248px]  md:h-[280px] bg-left md:bg-bottom	 bg-no-repeat  figure w-full lg:w-[70%] xl:w-[50%] flex flex-col  justify-start items-start absolute left-0 md:left-6 lg:left-[70px] -top-16">
           <div className="hidden xl:block">
-            <h1 className="text-3xl md:text-5xl font-bold leading-tight 	rounded-r-2xl pl-6 pr-0 md:px-6">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-2 	rounded-r-2xl pl-6 pr-0 md:px-6">
               {t("hero_title_one")}{" "}
               <span className="text-plant">English4pros</span>
             </h1>
-            <h1 className="text-3xl md:text-5xl font-bold leading-tight inline-block	rounded-r-2xl px-6">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight inline-block mb-2	rounded-r-2xl px-6">
               {t("hero_title_two")}
             </h1>
-            <h1 className="mb-12 text-3xl md:text-5xl font-bold  leading-tight inline-block	rounded-r-2xl px-6">
+            <h1 className="mb-6 text-3xl md:text-5xl font-bold  leading-tight inline-block	rounded-r-2xl px-6">
               {t("hero_title_three")}
             </h1>
           </div>

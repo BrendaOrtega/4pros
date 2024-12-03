@@ -95,40 +95,40 @@ export const Banner = () => {
 
   const large = [
     "/banner1.svg",
-    "/banner4-xl.svg",
+    // "/banner4-xl.svg",
     "/banner2.png",
-    "/banner5-xl.svg",
+    // "/banner5-xl.svg",
   ];
   const largeEn = [
     "/banner1-xl-en.svg",
-    "/banner4-xl-en.svg",
+    // "/banner4-xl-en.svg",
     "/banner2-xl-en.svg",
-    "/banner5-xl-en.svg",
+    // "/banner5-xl-en.svg",
   ];
 
   const small = [
     "/banner-s.svg",
-    "/banner4-xs.svg",
+    // "/banner4-xs.svg",
     "/banner2-md.png",
-    "/banner5-xs.svg",
+    // "/banner5-xs.svg",
   ];
   const smallEn = [
     "/banner1-xs-en.svg",
-    "/banner4-xs-en.svg",
+    // "/banner4-xs-en.svg",
     "/banner2-xs-en.svg",
-    "/banner5-xs-en.svg",
+    // "/banner5-xs-en.svg",
   ];
   const mediumEn = [
     "/banner1-xs-en.svg",
-    "/banner4-md-en.svg",
+    // "/banner4-md-en.svg",
     "/banner2-xs-en.svg",
-    "/banner5-md-en.svg",
+    // "/banner5-md-en.svg",
   ];
   const medium = [
     "/banner-md1.png",
-    "/banner4-md.svg",
+    // "/banner4-md.svg",
     "/banner2-md.png",
-    "/banner5-md.svg",
+    // "/banner5-md.svg",
   ];
   return (
     <>
