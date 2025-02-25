@@ -36,7 +36,7 @@ export const Courses = () => {
           </div>
           <img
             className="w-full lg:w-[50%] rounded-[40px] min-h-auto mt-10 lg:mt-0 lg:min-h-[480px] hover:scale-95 transition-all"
-            src="/business.png"
+            src="/business.webp"
           />
         </div>
       </ScrollReveal>
@@ -44,7 +44,7 @@ export const Courses = () => {
         <div className="flex flex-wrap-reverse lg:flex-nowrap items-center mt-[64px] lg:mt-[200px]">
           <img
             className="w-full lg:w-[50%] rounded-[40px] min-h-auto mt-10 lg:mt-0 lg:min-h-[480px] hover:scale-95 transition-all"
-            src="/general.png"
+            src="/general.webp"
           />
           <div className="pl-0 lg:pl-16 w-full lg:w-[50%]">
             <h3 className="text-2xl lg:text-4xl text-black font-semibold mb-8">
@@ -93,43 +93,13 @@ export const ScrollReveal = ({ children }: { children: ReactNode }) => {
 export const Banner = () => {
   const { t, lang } = useTranslation();
 
-  const large = [
-    "/banner1.svg",
-    // "/banner4-xl.svg",
-    "/banner2.png",
-    // "/banner5-xl.svg",
-  ];
-  const largeEn = [
-    "/banner1-xl-en.svg",
-    // "/banner4-xl-en.svg",
-    "/banner2-xl-en.svg",
-    // "/banner5-xl-en.svg",
-  ];
+  const large = ["/banner1.webp", "/banner2.webp"];
+  const largeEn = ["/banner1-xl-en.webp", "/banner2-xl-en.webp"];
 
-  const small = [
-    "/banner-s.svg",
-    // "/banner4-xs.svg",
-    "/banner2-md.png",
-    // "/banner5-xs.svg",
-  ];
-  const smallEn = [
-    "/banner1-xs-en.svg",
-    // "/banner4-xs-en.svg",
-    "/banner2-xs-en.svg",
-    // "/banner5-xs-en.svg",
-  ];
-  const mediumEn = [
-    "/banner1-xs-en.svg",
-    // "/banner4-md-en.svg",
-    "/banner2-xs-en.svg",
-    // "/banner5-md-en.svg",
-  ];
-  const medium = [
-    "/banner-md1.png",
-    // "/banner4-md.svg",
-    "/banner2-md.png",
-    // "/banner5-md.svg",
-  ];
+  const small = ["/banner-s.webp", "/banner2-md.webp"];
+  const smallEn = ["/banner1-xs-en.webp", "/banner2-xs-en.webp"];
+  const mediumEn = ["/banner1-xs-en.webp", "/banner2-xs-en.webp"];
+  const medium = ["/banner-md1.webp", "/banner2-md.webp"];
   return (
     <>
       <ScrollReveal>

@@ -64,7 +64,7 @@ export const About = () => {
         <div className="flex items-stretch mt-[120px] flex-wrap-reverse lg:flex-nowrap">
           <img
             className="w-full lg:w-[50%] rounded-[40px]  object-cover object-bottom  mt-10 lg:mt-0 lg:h-auto h-[380px]"
-            src="/about-img.jpg"
+            src="/about-img.webp"
             alt="english meeting"
           />
           <div className="pl-0 lg:pl-16 text-iron font-light text-lg lg:text-xl w-full lg:w-[50%]">

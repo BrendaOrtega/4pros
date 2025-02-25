@@ -25,7 +25,7 @@ export const SimpleAnimatedGallery = ({
   const pics = [
     {
       key: "brenda",
-      src: "/testimonials/img1.png",
+      src: "/testimonials/img1.webp",
       name: "Brenda González",
       text: <p> {t("brenda")}</p>,
       title: "Product Designer",
@@ -34,7 +34,7 @@ export const SimpleAnimatedGallery = ({
     },
     {
       key: "hector",
-      src: "/testimonials/img2.png",
+      src: "/testimonials/img2.webp",
       name: "Héctor Campos",
       text: <p> {t("hector")}</p>,
       title: "Software Engineer",
@@ -43,7 +43,7 @@ export const SimpleAnimatedGallery = ({
     },
     {
       key: "arzola",
-      src: "/testimonials/img3.png",
+      src: "/testimonials/img3.webp",
       name: "Oscar Arzola",
       text: <p> {t("arzola")}</p>,
       title: "Release Manager, Pressbooks",
@@ -52,7 +52,7 @@ export const SimpleAnimatedGallery = ({
     },
     {
       key: "mariana",
-      src: "/testimonials/img4.png",
+      src: "/testimonials/img4.webp",
       name: "Mariana López",
       text: <p> {t("mariana")}</p>,
       title: "Frontend Manager at Natoure, CoFounder of Pitahaya",
@@ -61,7 +61,7 @@ export const SimpleAnimatedGallery = ({
     },
     {
       key: "oscar",
-      src: "/testimonials/img6.png",
+      src: "/testimonials/img6.webp",
       name: "Oscar de Jesús Montiel",
       text: <p> {t("oscar")}</p>,
       title: "Business owner",
@@ -69,7 +69,7 @@ export const SimpleAnimatedGallery = ({
     },
     {
       key: "jorge",
-      src: "/testimonials/img5.png",
+      src: "/testimonials/img5.webp",
       name: "Jorge Luis Andrade Vega",
       text: <p> {t("jorge")}</p>,
       title: "Sales representative at UPL Agro",
@@ -78,7 +78,7 @@ export const SimpleAnimatedGallery = ({
     },
     {
       key: "gloria",
-      src: "/testimonials/img7.jpg",
+      src: "/testimonials/img7.webp",
       name: "Gloria Moya Paniagua",
       text: <p> {t("gloria")}</p>,
       title: "Manager interior design team at AGO Projects",
@@ -87,7 +87,7 @@ export const SimpleAnimatedGallery = ({
     },
     {
       key: "carlos",
-      src: "/testimonials/img8.jpeg",
+      src: "/testimonials/img8.webp",
       name: "Carlos Mendoza",
       text: <p> {t("carlos")}</p>,
       title: "Frontend Developer",

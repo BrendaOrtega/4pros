@@ -80,7 +80,7 @@ export default function Cursos() {
             </div>
             <img
               className="w-full lg:w-[50%] hidden md:block rounded-[40px]  object-cover object-left  mt-10 lg:mt-0 lg:h-auto h-[240px] mb-10 lg:mb-0"
-              src="/cursos.png"
+              src="/cursos.webp"
               alt="english meeting"
             />
           </div>

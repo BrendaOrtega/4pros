@@ -25,7 +25,7 @@ export function ExpandableCard() {
   const { t, updateLang } = useTranslation();
   const cards = [
     {
-      src: "/katherine.svg",
+      src: "/katherine.webp",
       title: "Katherine Manson",
       content: () => {
         return (
@@ -58,7 +58,7 @@ export function ExpandableCard() {
     },
     {
       title: "DALIA VÁSQUEZ,",
-      src: "/dalia.svg",
+      src: "/dalia.webp",
 
       content: () => {
         return (
@@ -98,7 +98,7 @@ export function ExpandableCard() {
 
     {
       title: "GINA GONZÁLEZ",
-      src: "/gina.svg",
+      src: "/gina.webp",
 
       ctaText: "Play",
       ctaLink: "https://ui.aceternity.com/templates",
